@@ -344,6 +344,7 @@ p{margin:0 0 1em;max-width:62ch}
 .price{font:400 1.5rem/1 var(--display);letter-spacing:-.02em;color:#fff}
 .thumb{margin:-26px -26px 20px;aspect-ratio:16/9;background:linear-gradient(135deg,#13224a,#05080f);display:grid;place-items:center;overflow:hidden;position:relative}
 .thumb .ph{font-size:2rem;color:var(--cyan);opacity:.8}.o-act{display:flex;gap:10px;flex-wrap:wrap}
+.cover{width:100%;max-width:300px;height:auto;border-radius:12px;margin:6px auto 18px;display:block;box-shadow:0 14px 40px rgba(0,0,0,.5)}
 .thumb img{width:100%;height:100%;object-fit:cover}.thumb .len{position:absolute;right:12px;bottom:10px;font:800 .6rem var(--body);letter-spacing:.1em;background:rgba(0,0,0,.65);padding:6px 10px;border-radius:999px}
 .offer-rows li{display:grid;grid-template-columns:1fr auto auto;gap:24px;align-items:center;padding:24px 0;border-top:1px solid var(--line)}
 .offer-rows li:last-child{border-bottom:1px solid var(--line)}
@@ -456,8 +457,8 @@ p{margin:0 0 1em;max-width:62ch}
   <p class="muted small note">More books are on the way.</p>
 </div></section>
 <section class="section tight"><div class="wrap"><div class="cta-panel reveal small-cta">
-  <h2 class="cta-h2">Read the book? Get a free 30-minute session.</h2>
-  <p class="lead center">Readers of Rebuilding Black Wealth in the Digital Age can book a free 30-minute call to talk through what they read.</p>
+  <h2 class="cta-h2">Read The Puzzle? Get a free 30-minute session.</h2>
+  <p class="lead center">Readers of The Puzzle can book a free 30-minute call to talk through what they read.</p>
   <div class="btn-row center"><a class="btn btn-gold" href="https://calendly.com/blockwallstreet/30min" target="_blank" rel="noopener">Book my free 30 minutes</a></div>
 </div></div></section>
 
@@ -573,7 +574,7 @@ function renderOffers(){
     }else if(k==='bundles'){
       box.innerHTML=L.map(function(x){return '<article class="card"><p class="meta">Video + course + guide</p><h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p><div class="card-foot">'+(x.price?'<span class="price">'+esc(x.price)+'</span>':'')+action(x,'Get the bundle','Ask about it')+'</div></article>'}).join('');
     }else if(k==='ebooks'){
-      box.innerHTML=L.map(function(x){var u=safeUrl(x.link);return '<article class="card"><p class="meta">Book</p><h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p><div class="card-foot">'+(u?'<a class="btn btn-gold btn-small" href="'+esc(u)+'" target="_blank" rel="noopener">Read on written.app</a>':'<span class="chip">Link coming soon</span>')+'</div></article>'}).join('');
+      box.innerHTML=L.map(function(x){var u=safeUrl(x.link);return '<article class="card"><p class="meta">Book</p>'+(x.image?'<img class="cover" src="'+esc(x.image)+'" alt="Cover of '+esc(x.title)+'" loading="lazy">':'')+'<h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p><div class="card-foot">'+(u?'<a class="btn btn-gold btn-small" href="'+esc(u)+'" target="_blank" rel="noopener">Read on written.app</a>':'<span class="chip">Link coming soon</span>')+'</div></article>'}).join('');
     }
   });
 }

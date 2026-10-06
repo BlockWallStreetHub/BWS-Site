@@ -115,10 +115,17 @@ window.BWS_OFFERS = {
   "bundles": [],
   "ebooks": [
     {
-      "title": "Rebuilding Black Wealth in the Digital Age",
-      "desc": "A story-format guide to rebuilding community wealth with digital assets, by Block Wall Street.",
+      "title": "The Puzzle (2026 Edition)",
+      "desc": "The enigma behind Bitcoin and cryptocurrency, as explained by Natoshi Stackamoto.",
       "link": "https://written.app/book/6b2db6eb-b4bb-4ff1-aff3-231499e8f94c",
-      "image": "",
+      "image": "cover-the-puzzle.jpg",
+      "show": true
+    },
+    {
+      "title": "Rebuilding Black Wealth in the Digital Age",
+      "desc": "A study guide for Black Americans, updated edition. Our ancestors were the collateral. Now we hold it.",
+      "link": "https://written.app/book/c69c4db3-6a2e-4aab-bc1f-501454e9c771",
+      "image": "cover-black-wealth.jpg",
       "show": true
     }
   ]
