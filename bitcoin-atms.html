@@ -489,6 +489,65 @@ p{margin:0 0 1em;max-width:62ch}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 @media(max-width:900px){.atm-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.atm-grid{grid-template-columns:1fr}.atm-box{padding:22px}}
+
+.nl-hero{display:grid;grid-template-columns:1fr minmax(220px,380px);gap:44px;align-items:center;padding:38px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(135deg,rgba(255,160,60,.08),rgba(59,130,255,.10));margin-bottom:38px}
+.nl-copy h2{font-size:clamp(1.7rem,3.2vw,2.4rem);margin:0 0 10px}
+.nl-logo img{display:block;width:100%;height:auto;border-radius:50%;box-shadow:0 20px 70px rgba(0,0,0,.55)}
+.nl-form .nl-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.nl-form input[type=email]{flex:1 1 240px;min-width:0}
+.nl-note{margin:10px 0 0}
+.nl-h{font-size:clamp(1.5rem,3vw,2rem);margin:0 0 18px}
+.nl-grid{margin-bottom:34px;grid-template-columns:repeat(3,1fr)}
+.nl-issue{border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin-bottom:22px}
+.nl-issue ol{margin:10px 0 14px;padding-left:20px;color:#B3BCD3;display:grid;gap:8px}.nl-issue b{color:#fff}
+.nl-bonus{border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin:22px 0}
+.nl-bonus h3{margin:0 0 8px;font-size:1.4rem}
+.nl-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.nl-band{display:flex;align-items:center;gap:26px;padding:26px 30px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(135deg,rgba(255,160,60,.08),rgba(59,130,255,.10))}
+.nl-band-logo{width:132px;height:132px;flex:none;border-radius:50%}
+.nl-band-body{flex:1;min-width:0}.nl-band-body h3{margin:0 0 6px;font-size:1.5rem}
+.nl-compact{margin-top:12px}
+.prog{position:sticky;top:78px;z-index:50;height:4px;background:rgba(255,255,255,.06)}
+.prog span{display:block;height:100%;width:0;background:var(--grad)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.chip{padding:9px 14px;border:1px solid var(--line);border-radius:999px;font-size:.82rem;color:#B3BCD3;text-decoration:none}.chip:hover{color:#fff;border-color:var(--cyan)}
+.lessons{display:grid;gap:18px;margin-bottom:28px}
+.lesson{display:grid;grid-template-columns:90px 1fr;gap:22px;padding:28px;border:1px solid var(--line);border-radius:22px;scroll-margin-top:110px}
+.l-num{font:400 3.2rem/1 var(--display);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.l-body h3{margin:2px 0 4px;font-size:1.6rem}.l-sub{color:var(--cyan);font-weight:700;margin:0 0 10px}
+.l-body p{color:#C4CCE2;line-height:1.7}
+.l-take{margin-top:12px;padding:12px 16px;border-left:3px solid var(--cyan);background:rgba(53,240,255,.06);border-radius:0 12px 12px 0}
+.l-quiz{border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin-bottom:22px}
+.l-quiz details{border-top:1px solid var(--line);padding:14px 0}.l-quiz summary{cursor:pointer;font-weight:700}.l-quiz details p{margin:10px 0 0;color:#B3BCD3}
+.center{text-align:center}
+@media(max-width:900px){.nl-hero{grid-template-columns:1fr;padding:26px}.nl-logo{max-width:300px;margin:0 auto;order:-1}.nl-grid{grid-template-columns:1fr}.nl-band{flex-direction:column;text-align:center}.lesson{grid-template-columns:1fr;gap:6px;padding:22px}.l-num{font-size:2.4rem}}
+
+.nav-group{position:relative}
+.nav-group::after{content:"";position:absolute;left:0;right:0;top:100%;height:26px}
+.nav-trigger{display:flex;align-items:center;gap:7px;background:none;border:0;cursor:pointer;font:800 .6rem/1 var(--body);letter-spacing:.15em;text-transform:uppercase;color:#B9C1D8;padding:14px 10px;white-space:nowrap}
+.nav-trigger:hover,.nav-group:focus-within .nav-trigger{color:#fff}
+.nav-group.has-current .nav-trigger{color:var(--cyan)}
+.caret{width:6px;height:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .18s}
+.nav-group.is-open .caret{transform:rotate(225deg) translateY(-1px)}
+.nav-menu{display:none;position:absolute;top:calc(100% + 4px);left:0;min-width:250px;padding:8px;background:#070c1a;border:1px solid rgba(130,170,255,.18);border-radius:16px;box-shadow:0 24px 60px rgba(0,0,0,.55);z-index:70}
+.primary-nav .nav-menu a:not(.btn){display:block;padding:12px 14px;border-radius:10px;font:600 .88rem/1.2 var(--body);letter-spacing:0;text-transform:none;color:#D5DBEE;white-space:normal}
+.primary-nav .nav-menu a:not(.btn):hover{background:rgba(53,240,255,.09);color:#fff}
+.primary-nav .nav-menu a[aria-current=page]{color:var(--cyan)}
+.primary-nav .nav-menu a[aria-current=page]::after{display:none}
+@media (min-width:1221px){
+  .nav-group:hover .nav-menu,.nav-group:focus-within .nav-menu,.nav-group.is-open .nav-menu{display:block}
+  .primary-nav .nav-direct{padding:14px 10px}
+}
+@media (max-width:1220px){
+  .primary-nav.is-open{max-height:calc(100vh - 78px);overflow-y:auto}
+  .nav-group{border-bottom:1px solid var(--line)}
+  .nav-group::after{display:none}
+  .nav-trigger{width:100%;justify-content:space-between;padding:16px 0;font-size:.7rem}
+  .nav-menu{position:static;min-width:0;display:none;background:none;border:0;box-shadow:none;padding:0 0 10px 12px}
+  .nav-group.is-open .nav-menu{display:block}
+  .primary-nav .nav-menu a:not(.btn){border-bottom:0;padding:11px 0;font-size:.95rem}
+  .primary-nav .nav-direct{padding:16px 0}
+}
 </style>
 <script>document.documentElement.className+=' js'</script>
 </head>
@@ -498,7 +557,7 @@ p{margin:0 0 1em;max-width:62ch}
   <div class="wrap bar">
     <a class="brand" href="index.html" aria-label="Block Wall Street Academy home"><span class="mark">BWS</span><span class="brand-name">Block Wall Street<small>Academy</small></span></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-    <nav id="primary-nav" class="primary-nav" aria-label="Primary"><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="consultations.html">Consultations</a><a href="schedule.html">Schedule</a><a href="events.html">Events</a><a href="news.html">News</a><a href="tools.html" aria-current="page">Tools</a><a href="e-books.html">E-Books</a><a href="midas-star-funding.html">Midas Star Funding</a><a href="about.html">About</a><a href="donate.html">☕ Donate</a><a class="btn btn-gold btn-small nav-cta" href="schedule.html">Book a session</a></nav>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary"><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Learn<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="e-books.html">E-Books</a><a href="bitcoin-in-10-minutes.html">Bitcoin in 10 Minutes</a><a href="rebuilding-black-wall-street.html">Rebuilding Black Wall Street</a></div></div><div class="nav-group has-current"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Tools<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="tools.html" aria-current="page">All tools</a><a href="bitcoin-atms.html">Find a Bitcoin ATM</a><a href="black-dollar-bitcoin.html">Black Dollar &amp; Bitcoin</a><a href="sats-converter.html">Sats converter</a><a href="dca-calculator.html">DCA calculator</a><a href="bitcoin-dashboard.html">Bitcoin dashboard</a><a href="priced-in-bitcoin.html">Priced in Bitcoin</a><a href="lp-simulator.html">Liquidity pool simulator</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">News<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="news.html">Daily crypto news</a><a href="newsletter.html">The Morning Brew newsletter</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Work with us<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="consultations.html">Consultations</a><a href="schedule.html">Schedule a session</a><a href="events.html">Events</a><a href="midas-star-funding.html">Midas Star Funding</a></div></div><a class="nav-direct" href="about.html">About</a><a class="nav-direct" href="donate.html">☕ Donate</a><a class="btn btn-gold btn-small nav-cta" href="schedule.html">Book a session</a></nav>
   </div>
 </header>
 <main id="main">
@@ -534,7 +593,7 @@ p{margin:0 0 1em;max-width:62ch}
   <div class="wrap foot-grid">
     <div><a class="brand" href="index.html"><span class="mark">BWS</span><span class="brand-name">Block Wall Street<small>Academy</small></span></a>
       <p class="muted small">Practical blockchain education from Chicago. Built on the legacy of Black Wall Street, rebuilt for the on-chain era.</p></div>
-    <nav class="foot-col" aria-label="Learn"><h4>Learn</h4><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="e-books.html">E-Books</a><a href="tools.html">Free tools</a><a href="bitcoin-atms.html">Find a Bitcoin ATM</a><a href="rebuilding-black-wall-street.html">Rebuilding Black Wall Street</a></nav>
+    <nav class="foot-col" aria-label="Learn"><h4>Learn</h4><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="e-books.html">E-Books</a><a href="tools.html">Free tools</a><a href="bitcoin-atms.html">Find a Bitcoin ATM</a><a href="bitcoin-in-10-minutes.html">Bitcoin in 10 Minutes</a><a href="newsletter.html">Morning Brew newsletter</a><a href="rebuilding-black-wall-street.html">Rebuilding Black Wall Street</a></nav>
     <nav class="foot-col" aria-label="Work with us"><h4>Work with us</h4><a href="consultations.html">Consultations</a><a href="schedule.html">Schedule</a><a href="events.html">Events</a><a href="midas-star-funding.html">Midas Star Funding</a><a href="about.html#contact">Contact</a></nav>
     <nav class="foot-col" aria-label="More"><h4>More</h4><a href="about.html">About</a><a href="donate.html">Buy me a coffee</a><a href="https://buy.stripe.com/cNi6oJ2nmg9h32S3MQ2sM0s" target="_blank" rel="noopener">FinFlix streaming</a><a href="about.html#foundation">Building 4 Our Future Foundation</a></nav>
   </div>
@@ -554,6 +613,17 @@ p{margin:0 0 1em;max-width:62ch}
 })();
 </script>
 <script>
+(function(){
+  var d=document, groups=[].slice.call(d.querySelectorAll('.nav-group'));
+  function closeAll(except){groups.forEach(function(g){if(g!==except){g.classList.remove('is-open');var t=g.querySelector('.nav-trigger');if(t)t.setAttribute('aria-expanded','false')}})}
+  d.addEventListener('click',function(e){
+    var t=e.target.closest('.nav-trigger');
+    if(t){var g=t.parentNode, open=!g.classList.contains('is-open'); closeAll(g); g.classList.toggle('is-open',open); t.setAttribute('aria-expanded',open?'true':'false'); return}
+    if(!e.target.closest('.nav-group')) closeAll(null);
+  });
+  d.addEventListener('keydown',function(e){if(e.key==='Escape'){closeAll(null)}});
+})();
+
 (function(){
 'use strict';
 var d=document;
