@@ -434,6 +434,14 @@ p{margin:0 0 1em;max-width:62ch}
 .cal-box iframe{width:100%;height:760px;border:0;border-radius:12px;background:#fff}
 .cal-box .center{text-align:center}
 @media(max-width:760px){.three-steps{grid-template-columns:1fr}.cal-box iframe{height:700px}}
+
+.story{display:grid;gap:18px}
+.story-step{padding:26px 28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(160deg,rgba(14,26,56,.7),rgba(5,9,20,.95))}
+.story-step .yr{display:inline-block;font:800 .62rem var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);margin-bottom:8px}
+.story-step h3{font-size:1.7rem;margin:0 0 10px}
+.story-step p{color:#B3BCD3;max-width:860px}
+.tool-card.feat{border-color:var(--cyan)}
+.home-story{margin:0}
 </style>
 <script>document.documentElement.className+=' js'</script>
 </head>
@@ -450,10 +458,14 @@ p{margin:0 0 1em;max-width:62ch}
 <section class="page-head"><div class="wrap">
   <p class="eyebrow">Books</p>
   <h1 class="" data-sweep><span class="line"><span class="sweep" style="--d:0.00s"><span class="t">Read the</span></span></span><span class="line"><span class="sweep" style="--d:0.14s"><span class="t"><span class="grad">blueprint.</span></span></span></span></h1>
-  <p class="lead reveal">Our books are published on written.app. Tap a book to read it there.</p>
+  <p class="lead reveal">Our books are published on written.app and Ourboox. Tap a book to read it there.</p>
 </div></section>
 <section class="section tight"><div class="wrap">
   <div class="card-grid" data-offers="ebooks"></div>
+</div></section>
+<section class="section tight" id="free-books"><div class="wrap">
+  <div class="group-head"><h2>Free Reads</h2><p class="muted">Read these on us.</p></div>
+  <div class="card-grid" data-offers="ebooks" data-free="1"></div>
   <p class="muted small note">More books are on the way.</p>
 </div></section>
 <section class="section tight"><div class="wrap"><div class="cta-panel reveal small-cta">
@@ -467,9 +479,9 @@ p{margin:0 0 1em;max-width:62ch}
   <div class="wrap foot-grid">
     <div><a class="brand" href="index.html"><span class="mark">BWS</span><span class="brand-name">Block Wall Street<small>Academy</small></span></a>
       <p class="muted small">Practical blockchain education from Chicago. Built on the legacy of Black Wall Street, rebuilt for the on-chain era.</p></div>
-    <nav class="foot-col" aria-label="Learn"><h4>Learn</h4><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="e-books.html">E-Books</a><a href="tools.html">Free tools</a></nav>
+    <nav class="foot-col" aria-label="Learn"><h4>Learn</h4><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="e-books.html">E-Books</a><a href="tools.html">Free tools</a><a href="rebuilding-black-wall-street.html">Rebuilding Black Wall Street</a></nav>
     <nav class="foot-col" aria-label="Work with us"><h4>Work with us</h4><a href="consultations.html">Consultations</a><a href="schedule.html">Schedule</a><a href="events.html">Events</a><a href="midas-star-funding.html">Midas Star Funding</a><a href="about.html#contact">Contact</a></nav>
-    <nav class="foot-col" aria-label="More"><h4>More</h4><a href="about.html">About</a><a href="https://finflix.uscreen.io" target="_blank" rel="noopener">FinFlix streaming</a><a href="about.html#foundation">Building 4 Our Future Foundation</a></nav>
+    <nav class="foot-col" aria-label="More"><h4>More</h4><a href="about.html">About</a><a href="https://buy.stripe.com/cNi6oJ2nmg9h32S3MQ2sM0s" target="_blank" rel="noopener">FinFlix streaming</a><a href="about.html#foundation">Building 4 Our Future Foundation</a></nav>
   </div>
   <div class="wrap legal small muted"><p>Block Wall Street provides education only. Nothing here is financial, legal, or tax advice, and digital assets can lose value. No guaranteed returns. Do your own research.</p><p>&copy; <span data-year>2026</span> Block Wall Street</p></div>
 </footer>
@@ -574,7 +586,10 @@ function renderOffers(){
     }else if(k==='bundles'){
       box.innerHTML=L.map(function(x){return '<article class="card"><p class="meta">Video + course + guide</p><h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p><div class="card-foot">'+(x.price?'<span class="price">'+esc(x.price)+'</span>':'')+action(x,'Get the bundle','Ask about it')+'</div></article>'}).join('');
     }else if(k==='ebooks'){
-      box.innerHTML=L.map(function(x){var u=safeUrl(x.link);return '<article class="card"><p class="meta">Book</p>'+(x.image?'<img class="cover" src="'+esc(x.image)+'" alt="Cover of '+esc(x.title)+'" loading="lazy">':'')+'<h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p><div class="card-foot">'+(u?'<a class="btn btn-gold btn-small" href="'+esc(u)+'" target="_blank" rel="noopener">Read on written.app</a>':'<span class="chip">Link coming soon</span>')+'</div></article>'}).join('');
+      var wantFree=box.getAttribute('data-free')==='1';
+      L=L.filter(function(x){return wantFree?x.free===true:x.free!==true});
+      if(!L.length){box.innerHTML='<p class="muted">New books are coming soon.</p>';return}
+      box.innerHTML=L.map(function(x){var u=safeUrl(x.link);return '<article class="card"><p class="meta">'+(x.free?'Free Read':'Book')+'</p>'+(x.image?'<img class="cover" src="'+esc(x.image)+'" alt="Cover of '+esc(x.title)+'" loading="lazy">':'')+'<h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p><div class="card-foot">'+(u?'<a class="btn btn-gold btn-small" href="'+esc(u)+'" target="_blank" rel="noopener">'+(x.free?'Read for free':'Read on written.app')+'</a>':'<span class="chip">Link coming soon</span>')+'</div></article>'}).join('');
     }
   });
 }

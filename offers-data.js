@@ -127,6 +127,30 @@ window.BWS_OFFERS = {
       "link": "https://written.app/book/c69c4db3-6a2e-4aab-bc1f-501454e9c771",
       "image": "cover-black-wealth.jpg",
       "show": true
+    },
+    {
+      "title": "Understanding The Digital Asset Frontier",
+      "desc": "A guide to money, Bitcoin, crypto, Web3, and the future of finance, presented by Block Wall Street.",
+      "link": "https://www.ourboox.com/bp/1732507/",
+      "image": "cover-digital-asset-frontier.jpg",
+      "free": true,
+      "show": true
+    },
+    {
+      "title": "What Are Automated Investment Vaults",
+      "desc": "A master study guide to AI-powered crypto wealth systems, covering BankrBot, MamoBot, and Krystal AI vaults.",
+      "link": "https://www.ourboox.com/b/1727423/what-are-automated-investment-vaults/",
+      "image": "cover-automated-investment-vaults.jpg",
+      "free": true,
+      "show": true
+    },
+    {
+      "title": "The Next Frontier of Next Gen Finance",
+      "desc": "The playbook for building wealth in the new economy: how digital assets, intelligent treasury systems, and decentralized infrastructure are creating a new financial paradigm.",
+      "link": "https://www.ourboox.com/b/1732675/the-next-frontier-of-next-gen-finance/",
+      "image": "cover-next-gen-finance.jpg",
+      "free": true,
+      "show": true
     }
   ]
 };
