@@ -442,6 +442,38 @@ p{margin:0 0 1em;max-width:62ch}
 .story-step p{color:#B3BCD3;max-width:860px}
 .tool-card.feat{border-color:var(--cyan)}
 .home-story{margin:0}
+
+.don-photo{position:relative;overflow:hidden;line-height:0;background:#0b0a10}
+.don-photo img{animation:kb 22s ease-in-out infinite alternate;transform-origin:30% 60%}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.045)}}
+.don-fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;animation:kb 22s ease-in-out infinite alternate;transform-origin:30% 60%}
+.ds{stroke-dasharray:70 420;opacity:0;animation:dsteam 4.4s ease-in-out infinite}
+.ds.d2{animation-delay:1.1s}.ds.d3{animation-delay:2.2s}.ds.d4{animation-delay:3.3s}
+@keyframes dsteam{0%{opacity:0;transform:translateY(26px);stroke-dashoffset:70}25%{opacity:.8}70%{opacity:.45}100%{opacity:0;transform:translateY(-40px);stroke-dashoffset:-260}}
+.don-rim{animation:drim 3s ease-in-out infinite}
+@keyframes drim{0%,100%{opacity:.25}50%{opacity:.7}}
+.don-scr{opacity:0;mix-blend-mode:screen;animation:dscr 4s ease-in-out infinite}
+.don-scr.s2{animation-delay:1.6s}
+@keyframes dscr{0%,100%{opacity:0}50%{opacity:.10}}
+@media(prefers-reduced-motion:reduce){.don-photo img,.don-fx,.ds,.don-rim,.don-scr{animation:none}.ds{opacity:.4}}
+
+.don-scene{margin:0 0 28px;border:1px solid var(--line);border-radius:26px;overflow:hidden}.don-scene img{display:block;width:100%;height:auto}.don-scene figcaption{padding:12px 18px;font-size:.85rem;color:#B3BCD3;text-align:center;border-top:1px solid var(--line)}
+.don-hero{display:block;padding:38px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(135deg,rgba(53,240,255,.07),rgba(138,77,255,.09));margin-bottom:34px}
+.don-copy h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin:6px 0 14px}
+.don-copy p{color:#B3BCD3}
+.don-act{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 10px}
+.don-grid{margin-bottom:34px;grid-template-columns:repeat(3,1fr)}
+.don-menu{border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin-bottom:22px}
+.don-menu h3{font-size:1.5rem;margin:0 0 12px}
+.don-menu ul{list-style:none;margin:0 0 12px;padding:0}
+.don-menu li{display:flex;gap:18px;padding:12px 0;border-bottom:1px dashed var(--line);color:#B3BCD3}
+.don-menu li b{flex:none;min-width:92px;color:#fff}
+.don-note{text-align:center}
+@media(max-width:760px){.don-grid{grid-template-columns:1fr}.don-hero{padding:24px}.don-menu li{flex-direction:column;gap:2px}}
+
+.coffee-band{display:flex;align-items:center;gap:18px;padding:20px 26px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,rgba(255,106,42,.10),rgba(138,77,255,.10));text-decoration:none;color:#B3BCD3}
+.coffee-band b{color:#fff}.cb-ico{font-size:2rem}.cb-txt{flex:1}
+@media(max-width:760px){.coffee-band{flex-direction:column;text-align:center}}
 </style>
 <script>document.documentElement.className+=' js'</script>
 </head>
@@ -451,7 +483,7 @@ p{margin:0 0 1em;max-width:62ch}
   <div class="wrap bar">
     <a class="brand" href="index.html" aria-label="Block Wall Street Academy home"><span class="mark">BWS</span><span class="brand-name">Block Wall Street<small>Academy</small></span></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-    <nav id="primary-nav" class="primary-nav" aria-label="Primary"><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="consultations.html">Consultations</a><a href="schedule.html">Schedule</a><a href="events.html">Events</a><a href="news.html">News</a><a href="tools.html">Tools</a><a href="e-books.html">E-Books</a><a href="midas-star-funding.html">Midas Star Funding</a><a href="about.html">About</a><a class="btn btn-gold btn-small nav-cta" href="schedule.html">Book a session</a></nav>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary"><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="consultations.html">Consultations</a><a href="schedule.html">Schedule</a><a href="events.html">Events</a><a href="news.html">News</a><a href="tools.html">Tools</a><a href="e-books.html">E-Books</a><a href="midas-star-funding.html">Midas Star Funding</a><a href="about.html">About</a><a href="donate.html">☕ Donate</a><a class="btn btn-gold btn-small nav-cta" href="schedule.html">Book a session</a></nav>
   </div>
 </header>
 <main id="main">
@@ -678,7 +710,7 @@ p{margin:0 0 1em;max-width:62ch}
     <div class="btn-row center"><a class="btn btn-gold" href="courses.html">Explore all courses &#8599;</a><a class="btn btn-ghost" href="consultations.html">Book a consultation</a></div>
   </div></div>
 </section>
-
+<section class="section tight"><div class="wrap"><a class="coffee-band reveal" href="donate.html"><span class="cb-ico" aria-hidden="true">&#9749;</span><span class="cb-txt"><b>Like what you learn here?</b> All I ask is a cup of coffee to fuel the studying.</span><span class="btn btn-gold btn-small">Buy me a coffee</span></a></div></section>
 </main>
 <footer class="site-footer">
   <div class="wrap foot-grid">
@@ -686,7 +718,7 @@ p{margin:0 0 1em;max-width:62ch}
       <p class="muted small">Practical blockchain education from Chicago. Built on the legacy of Black Wall Street, rebuilt for the on-chain era.</p></div>
     <nav class="foot-col" aria-label="Learn"><h4>Learn</h4><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="e-books.html">E-Books</a><a href="tools.html">Free tools</a><a href="rebuilding-black-wall-street.html">Rebuilding Black Wall Street</a></nav>
     <nav class="foot-col" aria-label="Work with us"><h4>Work with us</h4><a href="consultations.html">Consultations</a><a href="schedule.html">Schedule</a><a href="events.html">Events</a><a href="midas-star-funding.html">Midas Star Funding</a><a href="about.html#contact">Contact</a></nav>
-    <nav class="foot-col" aria-label="More"><h4>More</h4><a href="about.html">About</a><a href="https://finflix.uscreen.io" target="_blank" rel="noopener">FinFlix streaming</a><a href="about.html#foundation">Building 4 Our Future Foundation</a></nav>
+    <nav class="foot-col" aria-label="More"><h4>More</h4><a href="about.html">About</a><a href="donate.html">Buy me a coffee</a><a href="https://buy.stripe.com/cNi6oJ2nmg9h32S3MQ2sM0s" target="_blank" rel="noopener">FinFlix streaming</a><a href="about.html#foundation">Building 4 Our Future Foundation</a></nav>
   </div>
   <div class="wrap legal small muted"><p>Block Wall Street provides education only. Nothing here is financial, legal, or tax advice, and digital assets can lose value. No guaranteed returns. Do your own research.</p><p>&copy; <span data-year>2026</span> Block Wall Street</p></div>
 </footer>
@@ -849,7 +881,10 @@ function renderOffers(){
     }else if(k==='bundles'){
       box.innerHTML=L.map(function(x){return '<article class="card"><p class="meta">Video + course + guide</p><h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p><div class="card-foot">'+(x.price?'<span class="price">'+esc(x.price)+'</span>':'')+action(x,'Get the bundle','Ask about it')+'</div></article>'}).join('');
     }else if(k==='ebooks'){
-      box.innerHTML=L.map(function(x){var u=safeUrl(x.link);return '<article class="card"><p class="meta">Book</p>'+(x.image?'<img class="cover" src="'+esc(x.image)+'" alt="Cover of '+esc(x.title)+'" loading="lazy">':'')+'<h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p><div class="card-foot">'+(u?'<a class="btn btn-gold btn-small" href="'+esc(u)+'" target="_blank" rel="noopener">Read on written.app</a>':'<span class="chip">Link coming soon</span>')+'</div></article>'}).join('');
+      var wantFree=box.getAttribute('data-free')==='1';
+      L=L.filter(function(x){return wantFree?x.free===true:x.free!==true});
+      if(!L.length){box.innerHTML='<p class="muted">New books are coming soon.</p>';return}
+      box.innerHTML=L.map(function(x){var u=safeUrl(x.link);return '<article class="card"><p class="meta">'+(x.free?'Free Read':'Book')+'</p>'+(x.image?'<img class="cover" src="'+esc(x.image)+'" alt="Cover of '+esc(x.title)+'" loading="lazy">':'')+'<h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p><div class="card-foot">'+(u?'<a class="btn btn-gold btn-small" href="'+esc(u)+'" target="_blank" rel="noopener">'+(x.free?'Read for free':'Read on written.app')+'</a>':'<span class="chip">Link coming soon</span>')+'</div></article>'}).join('');
     }
   });
 }
