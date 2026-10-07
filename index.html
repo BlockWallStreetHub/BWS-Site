@@ -474,6 +474,21 @@ p{margin:0 0 1em;max-width:62ch}
 .coffee-band{display:flex;align-items:center;gap:18px;padding:20px 26px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,rgba(255,106,42,.10),rgba(138,77,255,.10));text-decoration:none;color:#B3BCD3}
 .coffee-band b{color:#fff}.cb-ico{font-size:2rem}.cb-txt{flex:1}
 @media(max-width:760px){.coffee-band{flex-direction:column;text-align:center}}
+
+.atm-box{border:1px solid var(--line);border-radius:24px;padding:32px;background:linear-gradient(135deg,rgba(53,240,255,.07),rgba(138,77,255,.09));margin-bottom:38px}
+.atm-box h2{font-size:clamp(1.6rem,3vw,2.2rem);margin:0 0 8px}
+.atm-form{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0 6px}
+.atm-form input{flex:1 1 260px;min-width:0;padding:15px 18px;border-radius:14px;border:1px solid var(--line);background:rgba(4,7,15,.7);color:#fff;font:500 1rem var(--body)}
+.atm-form input:focus{outline:2px solid #35f0ff;outline-offset:2px}
+.atm-msg{min-height:1.4em;margin:0 0 10px}
+.atm-links{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 14px}
+.atm-h{font-size:clamp(1.5rem,3vw,2rem);margin:0 0 18px}
+.atm-grid{margin-bottom:34px;grid-template-columns:repeat(3,1fr)}
+.atm-cta{border:1px solid var(--line);border-radius:20px;padding:26px 28px}
+.atm-cta h3{margin:0 0 8px;font-size:1.4rem}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media(max-width:900px){.atm-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.atm-grid{grid-template-columns:1fr}.atm-box{padding:22px}}
 </style>
 <script>document.documentElement.className+=' js'</script>
 </head>
@@ -716,7 +731,7 @@ p{margin:0 0 1em;max-width:62ch}
   <div class="wrap foot-grid">
     <div><a class="brand" href="index.html"><span class="mark">BWS</span><span class="brand-name">Block Wall Street<small>Academy</small></span></a>
       <p class="muted small">Practical blockchain education from Chicago. Built on the legacy of Black Wall Street, rebuilt for the on-chain era.</p></div>
-    <nav class="foot-col" aria-label="Learn"><h4>Learn</h4><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="e-books.html">E-Books</a><a href="tools.html">Free tools</a><a href="rebuilding-black-wall-street.html">Rebuilding Black Wall Street</a></nav>
+    <nav class="foot-col" aria-label="Learn"><h4>Learn</h4><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="e-books.html">E-Books</a><a href="tools.html">Free tools</a><a href="bitcoin-atms.html">Find a Bitcoin ATM</a><a href="rebuilding-black-wall-street.html">Rebuilding Black Wall Street</a></nav>
     <nav class="foot-col" aria-label="Work with us"><h4>Work with us</h4><a href="consultations.html">Consultations</a><a href="schedule.html">Schedule</a><a href="events.html">Events</a><a href="midas-star-funding.html">Midas Star Funding</a><a href="about.html#contact">Contact</a></nav>
     <nav class="foot-col" aria-label="More"><h4>More</h4><a href="about.html">About</a><a href="donate.html">Buy me a coffee</a><a href="https://buy.stripe.com/cNi6oJ2nmg9h32S3MQ2sM0s" target="_blank" rel="noopener">FinFlix streaming</a><a href="about.html#foundation">Building 4 Our Future Foundation</a></nav>
   </div>

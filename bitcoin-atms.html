@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Tools | Block Wall Street Academy</title>
-<meta name="description" content="Free Bitcoin tools and a liquidity pool simulator.">
+<title>Find a Bitcoin ATM | Block Wall Street Academy</title>
+<meta name="description" content="Search by ZIP or city for Bitcoin ATMs and places that sell Bitcoin for cash, with a safety checklist.">
 <meta name="theme-color" content="#04070F">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -492,7 +492,7 @@ p{margin:0 0 1em;max-width:62ch}
 </style>
 <script>document.documentElement.className+=' js'</script>
 </head>
-<body data-page="tools">
+<body data-page="bitcoin-atms">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap bar">
@@ -503,12 +503,30 @@ p{margin:0 0 1em;max-width:62ch}
 </header>
 <main id="main">
 <section class="page-head"><div class="wrap">
-  <h1>Tools</h1>
-  <p class="lead">Free interactive tools. Change the inputs, watch the outcome, and learn the risks before you commit real money.</p>
+  <p class="eyebrow">Free tool</p>
+  <h1 class="" data-sweep><span class="line"><span class="sweep" style="--d:0.00s"><span class="t">Find a</span></span></span><span class="line"><span class="sweep" style="--d:0.14s"><span class="t"><span class="grad">Bitcoin ATM.</span></span></span></span></h1>
+  <p class="lead reveal">Search by city or ZIP to find places near you that sell Bitcoin for cash. Do it safely, and know the fees before you put a dollar in.</p>
 </div></section>
 <section class="section tight"><div class="wrap">
-  <div class="tool-grid four"><a class="tool-card feat" href="black-dollar-bitcoin.html"><p class="meta">Featured &middot; Rebuilding Black Wall Street</p><h3>The Black Dollar and Bitcoin</h3><p>See where Black buying power goes each month, then what a small, steady Bitcoin slice could grow into.</p><span class="text-link">Open tool</span></a><a class="tool-card feat" href="bitcoin-atms.html"><p class="meta">New &middot; Free tool</p><h3>Find a Bitcoin ATM</h3><p>Search by ZIP or city for places that sell Bitcoin for cash, with a short safety checklist before you go.</p><span class="text-link">Open tool</span></a><a class="tool-card" href="sats-converter.html"><p class="meta">Start with the basics</p><h3>Sats converter</h3><p>Convert dollars, bitcoin, and sats at the live price.</p><span class="text-link">Open tool</span></a><a class="tool-card" href="dca-calculator.html"><p class="meta">Plan your buying</p><h3>Bitcoin DCA calculator</h3><p>See what regular buys would have become, and compare with a lump sum.</p><span class="text-link">Open tool</span></a><a class="tool-card" href="bitcoin-dashboard.html"><p class="meta">Understand the network</p><h3>Bitcoin dashboard</h3><p>Network numbers in plain English, with a price chart marked by halvings.</p><span class="text-link">Open tool</span></a><a class="tool-card" href="priced-in-bitcoin.html"><p class="meta">See buying power</p><h3>Priced in Bitcoin</h3><p>Compare home values in every state, measured in bitcoin.</p><span class="text-link">Open tool</span></a><a class="tool-card" href="lp-simulator.html"><p class="meta">Learn how pools earn</p><h3>Liquidity pool simulator</h3><p>Compare holding with providing liquidity for ETH/USD, BTC/USD, and ETH/BTC.</p><span class="text-link">Open tool</span></a></div>
-  <p class="muted small note">Tools use simplified assumptions and historical data. They illustrate how things behave and don't predict returns. Advanced strategy tools are part of our paid programs.</p>
+  <div class="atm-box reveal">
+    <h2>Search near you</h2>
+    <p class="muted">Type a ZIP code or city. We open the map in a new tab so you can compare nearby locations.</p>
+    <form class="atm-form" id="atm-form" novalidate>
+      <label class="sr" for="atm-q">ZIP code or city</label>
+      <input id="atm-q" type="text" inputmode="text" autocomplete="postal-code" placeholder="ZIP code or city, e.g. 60601" maxlength="60" required>
+      <button class="btn btn-gold" type="submit">Find Bitcoin ATMs</button>
+    </form>
+    <p class="atm-msg small muted" id="atm-msg" aria-live="polite"></p>
+    <div class="atm-links">
+      <a class="btn btn-ghost btn-small" href="https://libertyx.com/a/locations" target="_blank" rel="noopener">Open the LibertyX finder</a>
+      <a class="btn btn-ghost btn-small" href="https://coinatmradar.com/" target="_blank" rel="noopener">Open Coin ATM Radar</a>
+    </div>
+    <p class="small muted">LibertyX lists retail stores where you can buy Bitcoin with cash or a debit card. Coin ATM Radar maps standalone Bitcoin ATMs. Block Wall Street is not affiliated with either site, and we do not earn a fee from them.</p>
+  </div>
+  <h2 class="atm-h">Before you go</h2>
+  <div class="card-grid atm-grid"><article class="card reveal"><p class="meta">01</p><h3>Check the fee first</h3><p>Bitcoin ATMs often charge far more than an exchange. Look for the fee and the exchange rate on the screen before you insert any cash.</p></article><article class="card reveal"><p class="meta">02</p><h3>Only send to your own wallet</h3><p>Scan the QR code from a wallet you control, and check the first and last few characters of the address. Bitcoin sent to the wrong place cannot be pulled back.</p></article><article class="card reveal"><p class="meta">03</p><h3>Nobody legitimate asks for this</h3><p>If a caller, text, or “official” tells you to pay a fine, a bill, or a bail through a Bitcoin ATM, it is a scam. Hang up and call the real organization yourself.</p></article><article class="card reveal"><p class="meta">04</p><h3>Start small</h3><p>Make your first purchase a small test amount. Confirm it arrived before buying more.</p></article><article class="card reveal"><p class="meta">05</p><h3>Know your limits</h3><p>ID rules and daily limits vary by operator and by state. The operator's help page will tell you before you go.</p></article></div>
+  <div class="atm-cta reveal"><h3>Want a safer way to buy and hold?</h3><p class="muted">An ATM is one on-ramp. Learn how self-custody wallets, exchanges, and dollar-cost averaging compare, and book a session if you want help setting it up.</p>
+    <div class="atm-links"><a class="btn btn-gold btn-small" href="courses.html">Browse courses</a><a class="btn btn-ghost btn-small" href="consultations.html">Book a session</a></div></div>
 </div></section>
 
 </main>
@@ -523,6 +541,18 @@ p{margin:0 0 1em;max-width:62ch}
   <div class="wrap legal small muted"><p>Block Wall Street provides education only. Nothing here is financial, legal, or tax advice, and digital assets can lose value. No guaranteed returns. Do your own research.</p><p>&copy; <span data-year>2026</span> Block Wall Street</p></div>
 </footer>
 <a class="chat-bubble" href="about.html#contact">Message us</a>
+<script>
+(function(){
+  var f=document.getElementById('atm-form'); if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var q=document.getElementById('atm-q').value.trim(), m=document.getElementById('atm-msg');
+    if(q.length<2){m.textContent='Enter a ZIP code or city first.';return;}
+    m.textContent='';
+    window.open('https://www.google.com/maps/search/?api=1&query='+encodeURIComponent('bitcoin ATM near '+q),'_blank','noopener');
+  });
+})();
+</script>
 <script>
 (function(){
 'use strict';
