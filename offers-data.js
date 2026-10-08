@@ -49,66 +49,91 @@ window.BWS_OFFERS = {
   ],
   "videos": [
     {
+      "title": "Reintroduction To AVAX Recording & Full Course",
+      "length": "Recording & Course",
+      "price": "$100",
+      "was": "$125",
+      "badge": "20% off",
+      "desc": "The AVAX class recording with the full course.",
+      "link": "https://buy.stripe.com/5kQeVfe641en5b01EI2sM0t",
+      "image": "art-avax.jpg",
+      "show": true
+    },
+    {
       "title": "Introduction To Tokenized Stocks and Investing On-chain",
       "length": "Recording & Course",
       "price": "$75",
+      "was": "$125",
+      "badge": "40% off",
       "desc": "The class recording with the course.",
       "link": "https://buy.stripe.com/7sYbJ38LK1en32S5UY2sM0i",
-      "image": "",
+      "image": "art-tokenized-stocks.jpg",
       "show": true
     },
     {
       "title": "Introduction To XRP and Decentralized Opportunities",
       "length": "Recording & Course",
       "price": "$75",
+      "was": "$125",
+      "badge": "40% off",
       "desc": "The class recording with the course.",
       "link": "https://buy.stripe.com/4gM00l0fe8GP8ncdnq2sM0h",
-      "image": "",
+      "image": "art-xrp.jpg",
       "show": true
     },
     {
       "title": "Introduction To Arc Network",
       "length": "Recording & Course",
       "price": "$75",
+      "was": "$125",
+      "badge": "40% off",
       "desc": "The class recording with the course.",
       "link": "https://buy.stripe.com/bJe7sN4vu8GPcDs2IM2sM0g",
-      "image": "",
+      "image": "art-arc.jpg",
       "show": true
     },
     {
       "title": "Introduction To Robinhood Chain",
       "length": "Recording & Course",
       "price": "$75",
+      "was": "$125",
+      "badge": "40% off",
       "desc": "The class recording with the course.",
       "link": "https://buy.stripe.com/4gM6oJgec8GP0UK0AE2sM0f",
-      "image": "",
+      "image": "art-robinhood-chain.jpg",
       "show": true
     },
     {
       "title": "Understanding Gold, Silver, & Gold Backs Trust",
       "length": "Recording",
       "price": "$75",
+      "was": "$125",
+      "badge": "40% off",
       "desc": "The recorded class.",
       "link": "https://buy.stripe.com/28EcN79PO1en7j86Z22sM0p",
-      "image": "",
+      "image": "art-gold-silver.jpg",
       "show": true
     },
     {
       "title": "Introduction To Crypto Wallets",
       "length": "Recording",
       "price": "$75",
+      "was": "$125",
+      "badge": "40% off",
       "desc": "The recorded class.",
       "link": "https://buy.stripe.com/14A5kFfa8bT16f4gzC2sM0q",
-      "image": "",
+      "image": "art-crypto-wallets.jpg",
       "show": true
     },
     {
       "title": "Introduction To Neo Banks",
       "length": "Recording & Course",
       "price": "$75",
+      "was": "$125",
+      "badge": "40% off",
       "desc": "The class recording with the course.",
       "link": "https://buy.stripe.com/4gMdRbbXW8GPavkdnq2sM0r",
-      "image": "",
+      "image": "art-neo-banks.jpg",
       "show": true
     }
   ],

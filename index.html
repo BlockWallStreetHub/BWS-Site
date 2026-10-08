@@ -345,7 +345,7 @@ p{margin:0 0 1em;max-width:62ch}
 .thumb{margin:-26px -26px 20px;aspect-ratio:16/9;background:linear-gradient(135deg,#13224a,#05080f);display:grid;place-items:center;overflow:hidden;position:relative}
 .thumb .ph{font-size:2rem;color:var(--cyan);opacity:.8}.o-act{display:flex;gap:10px;flex-wrap:wrap}
 .cover{width:100%;max-width:300px;height:auto;border-radius:12px;margin:6px auto 18px;display:block;box-shadow:0 14px 40px rgba(0,0,0,.5)}
-.thumb img{width:100%;height:100%;object-fit:cover}.thumb .len{position:absolute;right:12px;bottom:10px;font:800 .6rem var(--body);letter-spacing:.1em;background:rgba(0,0,0,.65);padding:6px 10px;border-radius:999px}
+.thumb img{width:100%;height:100%;object-fit:cover}.price .was{font-weight:500;opacity:.5;font-size:.8em;margin-right:4px}.thumb .badge-off{position:absolute;left:12px;top:12px;font:800 .62rem var(--body);letter-spacing:.1em;text-transform:uppercase;background:#ffd66b;color:#2a1a00;padding:6px 10px;border-radius:999px}.thumb .len{position:absolute;right:12px;bottom:10px;font:800 .6rem var(--body);letter-spacing:.1em;background:rgba(0,0,0,.65);padding:6px 10px;border-radius:999px}
 .offer-rows li{display:grid;grid-template-columns:1fr auto auto;gap:24px;align-items:center;padding:24px 0;border-top:1px solid var(--line)}
 .offer-rows li:last-child{border-bottom:1px solid var(--line)}
 .offer-rows h3{margin:0 0 .2em;font-size:1.6rem}.offer-rows p{margin:0;color:#98a3bd;font-size:.9rem}
@@ -725,13 +725,13 @@ p{margin:0 0 1em;max-width:62ch}
       <div class="btn-row reveal"><a class="btn btn-gold" href="events.html">See all events</a><a class="btn btn-ghost" href="videos.html">Watch videos</a></div></div>
     <aside class="board reveal" aria-label="Next live class" data-next>
       <p class="board-label">Next live class</p>
-      <h3 data-next-title>Reintroduction to AVAX</h3>
+      <h3 data-next-title>New classes coming soon</h3>
       <dl class="board-meta">
-        <div><dt>When</dt><dd data-next-when>Wed, Oct 7, 8:00 PM CST</dd></div>
+        <div><dt>When</dt><dd data-next-when>Date announced by email</dd></div>
         <div><dt>Where</dt><dd data-next-where>Live online, recording included</dd></div>
-        <div><dt>About</dt><dd data-next-desc>What Avalanche is, its roadmap and partnerships, passive income with AVAX, the AVAX DeFi ecosystem, and ecosystem coin opportunities.</dd></div>
+        <div><dt>About</dt><dd data-next-desc>Join the list and we will tell you first when the next live class is scheduled.</dd></div>
       </dl>
-      <a class="btn btn-gold btn-block" data-next-link href="https://blockwallstreethub.github.io/IntroToAvaxPayment/" target="_blank" rel="noopener">Reserve your seat</a>
+      <a class="btn btn-gold btn-block" data-next-link href="events.html">See all events</a>
     </aside>
   </div>
 </section>
@@ -973,7 +973,7 @@ function renderOffers(){
     if(k==='consultations'){
       box.innerHTML=L.map(function(x){return '<li><div><p class="o-meta">'+esc(x.length)+'</p><h3>'+esc(x.title)+'</h3>'+(x.desc?'<p>'+esc(x.desc)+'</p>':'')+'</div><span class="price">'+esc(x.price)+'</span><div class="o-act">'+action(x,'Buy now','Request this session')+(safeUrl(x.cal)?'<a class="btn btn-ghost btn-small" href="schedule.html">Pick a time</a>':'')+'</div></li>'}).join('');
     }else if(k==='videos'){
-      box.innerHTML=L.map(function(x){return '<article class="card"><div class="thumb">'+(x.image?'<img src="'+esc(x.image)+'" alt="" loading="lazy">':'<span class="ph">&#9654;</span>')+(x.length?'<span class="len">'+esc(x.length)+'</span>':'')+'</div><h3>'+esc(x.title)+'</h3>'+(x.desc?'<p>'+esc(x.desc)+'</p>':'')+'<div class="card-foot">'+(x.price?'<span class="price">'+esc(x.price)+'</span>':'')+action(x,'Buy replay','Ask about it')+'</div></article>'}).join('');
+      box.innerHTML=L.map(function(x){return '<article class="card"><div class="thumb">'+(x.image?'<img src="'+esc(x.image)+'" alt="" loading="lazy">':'<span class="ph">&#9654;</span>')+(x.length?'<span class="len">'+esc(x.length)+'</span>':'')+(x.badge?'<span class="badge-off">'+esc(x.badge)+'</span>':'')+'</div><h3>'+esc(x.title)+'</h3>'+(x.desc?'<p>'+esc(x.desc)+'</p>':'')+'<div class="card-foot">'+(x.price?'<span class="price">'+(x.was?'<s class="was">'+esc(x.was)+'</s> ':'')+esc(x.price)+'</span>':'')+action(x,'Buy replay','Ask about it')+'</div></article>'}).join('');
     }else if(k==='bundles'){
       box.innerHTML=L.map(function(x){return '<article class="card"><p class="meta">Video + course + guide</p><h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p><div class="card-foot">'+(x.price?'<span class="price">'+esc(x.price)+'</span>':'')+action(x,'Get the bundle','Ask about it')+'</div></article>'}).join('');
     }else if(k==='ebooks'){
