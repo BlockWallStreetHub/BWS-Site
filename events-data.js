@@ -20,8 +20,8 @@ window.BWS_EVENTS = [
     "format": "Cohort program",
     "desc": "Our cohort program combining on-chain finance with UPMA trust structuring.",
     "price": "",
-    "link": "#rsvp",
-    "cta": "Join the waitlist",
+    "link": "index.html#bootcamp",
+    "cta": "RSVP for details",
     "featured": false
   }
 ];
