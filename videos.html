@@ -632,6 +632,39 @@ sup.sn{font:800 .66rem var(--body);margin-left:2px}sup.sn a{color:var(--cyan);te
 .bc-facts li{padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.03);display:flex;flex-direction:column;gap:4px}
 .bc-facts strong{color:var(--cyan);font-size:1.05rem}.bc-facts span{font-size:.82rem;opacity:.8}
 @media (max-width:560px){.bc-facts{grid-template-columns:1fr}}
+
+.soon{display:grid;grid-template-columns:240px 1fr;gap:32px;align-items:center;padding:28px;border:1px solid rgba(212,175,55,.4);border-radius:22px;background:linear-gradient(135deg,rgba(212,175,55,.08),rgba(255,255,255,.02))}
+.soon-cover{width:100%;height:auto;border-radius:6px;box-shadow:0 24px 50px rgba(0,0,0,.55),0 0 0 1px rgba(212,175,55,.35);transform:rotate(-1.5deg)}
+.soon h2{margin:6px 0 12px;font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.1}
+.soon .lead,.soon p{max-width:none}
+@media (max-width:720px){.soon{grid-template-columns:1fr;padding:20px}.soon-cover{max-width:220px;margin:0 auto}}
+
+.fb-intro{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 26px}
+.fb-intro div{padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.03)}
+.fb-intro b{display:block;color:var(--cyan);margin-bottom:4px}
+.fb-panel{border-radius:18px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.fb-after{margin-top:28px;padding:26px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.03)}
+.fb-after h3{margin:0 0 8px}.fb-after p{max-width:none}
+@media (max-width:720px){.fb-intro{grid-template-columns:1fr}}
+
+.btn-crypto{display:inline-flex;align-items:center;gap:6px;font:700 .8rem var(--body);padding:9px 14px;border-radius:999px;border:1px solid rgba(255,214,107,.5);background:rgba(255,214,107,.08);color:#ffd66b;cursor:pointer}
+.btn-crypto:hover{background:rgba(255,214,107,.18)}
+.o-act,.card-foot{flex-wrap:wrap}
+.cp{border:1px solid rgba(53,240,255,.3);border-radius:24px;background:#070d1e;color:#E6EAF6;padding:0;width:min(560px,calc(100vw - 32px));max-height:calc(100vh - 32px);overflow:auto}
+.cp::backdrop{background:rgba(2,4,12,.78);backdrop-filter:blur(4px)}
+.cp-in{padding:28px 26px;position:relative}
+.cp-x{position:absolute;right:14px;top:10px;background:none;border:0;color:#9aa6c8;font-size:1.8rem;cursor:pointer;line-height:1}
+.cp-eyebrow{margin:0 0 6px;font:800 .62rem var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--cyan)}
+.cp h3{margin:0 0 14px;font-size:1.35rem;padding-right:24px}
+.cp-amt{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.cp-amt div{border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.cp-amt span{display:block;font-size:.75rem;color:var(--muted)}.cp-amt b{font:400 1.5rem var(--display);color:#fff}
+.cp-amt div:last-child{border-color:rgba(255,214,107,.5)}.cp-amt div:last-child b{color:#ffd66b}
+.cp-note{font-size:.88rem;color:#c3cbe3;margin:10px 0}
+.cp-a{border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:8px 0}
+.cp-a p{margin:0 0 6px;font-size:.88rem}.cp-a i{color:var(--muted);font-style:normal;font-size:.76rem;margin-left:6px}
+.cp-a code{display:block;word-break:break-all;font-size:.76rem;background:rgba(255,255,255,.05);padding:8px 10px;border-radius:8px;margin-bottom:8px}
+.cp-warn{font-size:.82rem;color:#ffd66b;margin:10px 0}
 </style>
 <script>document.documentElement.className+=' js'</script>
 </head>
@@ -641,7 +674,7 @@ sup.sn{font:800 .66rem var(--body);margin-left:2px}sup.sn a{color:var(--cyan);te
   <div class="wrap bar">
     <a class="brand" href="index.html" aria-label="Block Wall Street Academy home"><span class="mark">BWS</span><span class="brand-name">Block Wall Street<small>Academy</small></span></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-    <nav id="primary-nav" class="primary-nav" aria-label="Primary"><div class="nav-group has-current"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Learn<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="courses.html">Courses</a><a href="videos.html" aria-current="page">Videos</a><a href="e-books.html">E-Books</a><a href="bitcoin-in-10-minutes.html">Bitcoin in 10 Minutes</a><a href="bitcoin-whitepaper.html">Bitcoin White Paper, Plain English</a><a href="rebuilding-black-wall-street.html">Rebuilding Black Wall Street</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Tools<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="tools.html">All tools</a><a href="bitcoin-atms.html">Find a Bitcoin ATM</a><a href="black-dollar-bitcoin.html">Black Dollar &amp; Bitcoin</a><a href="sats-converter.html">Sats converter</a><a href="dca-calculator.html">DCA calculator</a><a href="bitcoin-dashboard.html">Bitcoin dashboard</a><a href="priced-in-bitcoin.html">Priced in Bitcoin</a><a href="lp-simulator.html">Liquidity pool simulator</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">News<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="news.html">Daily crypto news</a><a href="newsletter.html">The Morning Brew newsletter</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Work with us<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="consultations.html">Consultations</a><a href="schedule.html">Schedule a session</a><a href="events.html">Events</a><a href="midas-star-funding.html">Midas Star Funding</a></div></div><a class="nav-direct" href="about.html">About</a><a class="nav-direct" href="donate.html">☕ Donate</a><a class="btn btn-gold btn-small nav-cta" href="schedule.html">Book a session</a></nav>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary"><div class="nav-group has-current"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Learn<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="courses.html">Courses</a><a href="videos.html" aria-current="page">Videos</a><a href="e-books.html">E-Books</a><a href="bitcoin-in-10-minutes.html">Bitcoin in 10 Minutes</a><a href="bitcoin-whitepaper.html">Bitcoin White Paper, Plain English</a><a href="rebuilding-black-wall-street.html">Rebuilding Black Wall Street</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Tools<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="tools.html">All tools</a><a href="bitcoin-atms.html">Find a Bitcoin ATM</a><a href="bitcoin-family-bank.html">Bitcoin Family Bank</a><a href="black-dollar-bitcoin.html">Black Dollar &amp; Bitcoin</a><a href="sats-converter.html">Sats converter</a><a href="dca-calculator.html">DCA calculator</a><a href="bitcoin-dashboard.html">Bitcoin dashboard</a><a href="priced-in-bitcoin.html">Priced in Bitcoin</a><a href="lp-simulator.html">Liquidity pool simulator</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">News<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="news.html">Daily crypto news</a><a href="newsletter.html">The Morning Brew newsletter</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Work with us<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="consultations.html">Consultations</a><a href="schedule.html">Schedule a session</a><a href="events.html">Events</a><a href="midas-star-funding.html">Midas Star Funding</a></div></div><a class="nav-direct" href="about.html">About</a><a class="nav-direct" href="donate.html">☕ Donate</a><a class="btn btn-gold btn-small nav-cta" href="schedule.html">Book a session</a></nav>
   </div>
 </header>
 <main id="main">
@@ -666,11 +699,29 @@ sup.sn{font:800 .66rem var(--body);margin-left:2px}sup.sn a{color:var(--cyan);te
     <label>Email you used at checkout<input type="email" name="email" autocomplete="email" required></label>
     <label>What did you buy?<select name="purchase" data-purchase-select required><option value="">Choose one</option><option>1 Hr. Consultation</option><option>One-on-One Mentorship Program</option><option>Group Mentorship Program</option><option>Understanding Yield Farming</option><option>Learn Self Banking</option><option>Reintroduction To AVAX Recording &amp; Full Course</option><option>Introduction To Tokenized Stocks and Investing On-chain</option><option>Introduction To XRP and Decentralized Opportunities</option><option>Introduction To Arc Network</option><option>Introduction To Robinhood Chain</option><option>Understanding Gold, Silver, &amp; Gold Backs Trust</option><option>Introduction To Crypto Wallets</option><option>Introduction To Neo Banks</option><option>Other</option></select></label>
     <label>Your booked time, or times that work (sessions only)<textarea name="times" rows="3" placeholder="Example: Booked Thursday 6 PM CST, or Tue/Thu evenings"></textarea></label>
+    <label>Paid with crypto? Paste your transaction ID (optional)<input type="text" name="crypto_txid" placeholder="Transaction ID or hash" autocomplete="off"></label>
     <button class="btn btn-gold" type="submit">Send confirmation</button>
   </form>
 </div></section>
 
 </main>
+<dialog class="cp" id="cryptoPay" aria-labelledby="cpTitle">
+  <form method="dialog" class="cp-in">
+    <button class="cp-x" value="close" aria-label="Close">&times;</button>
+    <p class="cp-eyebrow">Pay with crypto</p>
+    <h3 id="cpTitle">Item</h3>
+    <div class="cp-amt"><div><span>Listed price</span><b data-cp-base>$0</b></div><div><span>Crypto price (+10%)</span><b data-cp-total>$0</b></div></div>
+    <p class="cp-note">Send the crypto equal to <strong data-cp-total2>$0</strong> in US dollars, valued at the time you send. Crypto payments are 10% above the listed price.</p>
+    <div class="cp-addrs">
+      <div class="cp-a"><p><b>Bitcoin</b> <i>BTC network only</i></p><code>bc1qeky3vk4lhcdzgkqc2zcwxcwshd6gjx9ax029wf</code><button type="button" class="btn btn-ghost btn-small" data-copy="bc1qeky3vk4lhcdzgkqc2zcwxcwshd6gjx9ax029wf">Copy</button></div>
+      <div class="cp-a"><p><b>Ethereum</b> <i>ETH or tokens on Ethereum mainnet</i></p><code>0x9556dd494d92E4a551361666a04E523188830E11</code><button type="button" class="btn btn-ghost btn-small" data-copy="0x9556dd494d92E4a551361666a04E523188830E11">Copy</button></div>
+      <div class="cp-a"><p><b>Solana</b> <i>SOL or tokens on Solana</i></p><code>7fHws52R9kvwDb3TbgTDWmexSAGrj2C2a58LvnMYTgVu</code><button type="button" class="btn btn-ghost btn-small" data-copy="7fHws52R9kvwDb3TbgTDWmexSAGrj2C2a58LvnMYTgVu">Copy</button></div>
+    </div>
+    <p class="cp-warn">Use the matching network. Crypto sent on the wrong network cannot be recovered. For a large payment, send a small test amount first.</p>
+    <p class="cp-note"><strong>After you send it,</strong> confirm below so we can verify the payment and email your access.</p>
+    <a class="btn btn-gold" href="#confirm" data-cp-confirm>Confirm my payment</a>
+  </form>
+</dialog>
 <footer class="site-footer">
   <div class="wrap foot-grid">
     <div><a class="brand" href="index.html"><span class="mark">BWS</span><span class="brand-name">Block Wall Street<small>Academy</small></span></a>
@@ -775,6 +826,38 @@ function initCar(track){
 $$('[data-carousel]').forEach(initCar);
 
 /* offers (consultations, videos, bundles, books) */
+
+/* crypto pay: +10% over the listed price */
+function cpNum(p){var n=parseFloat(String(p||'').replace(/[^0-9.]/g,''));return isFinite(n)?n:0}
+function cpFmt(n){var r=Math.round(n*100)/100;return '$'+(r%1===0?r.toLocaleString('en-US'):r.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}))}
+function cryptoBtn(item){
+  if(!cpNum(item.price))return '';
+  return '<button type="button" class="btn-crypto" data-cp-open data-t="'+esc(item.title)+'" data-p="'+esc(item.price)+'">Pay with crypto</button>';
+}
+d.addEventListener('click',function(e){
+  var o=e.target.closest('[data-cp-open]'),dlg=d.getElementById('cryptoPay');
+  if(o&&dlg){
+    var base=cpNum(o.getAttribute('data-p'));
+    $('#cpTitle',dlg).textContent=o.getAttribute('data-t');
+    $('[data-cp-base]',dlg).textContent=cpFmt(base);
+    $('[data-cp-total]',dlg).textContent=cpFmt(base*1.1);
+    $('[data-cp-total2]',dlg).textContent=cpFmt(base*1.1);
+    dlg._t=o.getAttribute('data-t');
+    if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');
+    return;
+  }
+  var cf=e.target.closest('[data-cp-confirm]');
+  if(cf&&dlg){e.preventDefault();dlg.close();var sel=$('[data-purchase-select]'),t=d.getElementById('confirm');
+    if(sel&&dlg._t){for(var i=0;i<sel.options.length;i++)if(sel.options[i].text===dlg._t){sel.selectedIndex=i;break}}
+    if(t)t.scrollIntoView({behavior:'smooth'});return}
+  var c=e.target.closest('[data-copy]');
+  if(c){var v=c.getAttribute('data-copy');var done=function(){var t=c.textContent;c.textContent='Copied';setTimeout(function(){c.textContent=t},1400)};
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(v).then(done,done);
+    else{var ta=d.createElement('textarea');ta.value=v;d.body.appendChild(ta);ta.select();try{d.execCommand('copy')}catch(x){}d.body.removeChild(ta);done()}
+    return;
+  }
+  if(dlg&&e.target===dlg)dlg.close();
+});
 var O=window.BWS_OFFERS||null;
 function action(item,label,fallback){
   var u=safeUrl(item.link);
@@ -787,11 +870,11 @@ function renderOffers(){
     var k=box.getAttribute('data-offers'),L=(O[k]||[]).filter(function(x){return x.show!==false});
     if(!L.length){box.innerHTML='<p class="muted">New listings are coming soon.</p>';return}
     if(k==='consultations'){
-      box.innerHTML=L.map(function(x){return '<li><div><p class="o-meta">'+esc(x.length)+'</p><h3>'+esc(x.title)+'</h3>'+(x.desc?'<p>'+esc(x.desc)+'</p>':'')+'</div><span class="price">'+esc(x.price)+'</span><div class="o-act">'+action(x,'Buy now','Request this session')+(safeUrl(x.cal)?'<a class="btn btn-ghost btn-small" href="schedule.html">Pick a time</a>':'')+'</div></li>'}).join('');
+      box.innerHTML=L.map(function(x){return '<li><div><p class="o-meta">'+esc(x.length)+'</p><h3>'+esc(x.title)+'</h3>'+(x.desc?'<p>'+esc(x.desc)+'</p>':'')+'</div><span class="price">'+esc(x.price)+'</span><div class="o-act">'+action(x,'Buy now','Request this session')+cryptoBtn(x)+(safeUrl(x.cal)?'<a class="btn btn-ghost btn-small" href="schedule.html">Pick a time</a>':'')+'</div></li>'}).join('');
     }else if(k==='videos'){
-      box.innerHTML=L.map(function(x){return '<article class="card"><div class="thumb">'+(x.image?'<img src="'+esc(x.image)+'" alt="" loading="lazy">':'<span class="ph">&#9654;</span>')+(x.length?'<span class="len">'+esc(x.length)+'</span>':'')+(x.badge?'<span class="badge-off">'+esc(x.badge)+'</span>':'')+'</div><h3>'+esc(x.title)+'</h3>'+(x.desc?'<p>'+esc(x.desc)+'</p>':'')+'<div class="card-foot">'+(x.price?'<span class="price">'+(x.was?'<s class="was">'+esc(x.was)+'</s> ':'')+esc(x.price)+'</span>':'')+action(x,'Buy replay','Ask about it')+'</div></article>'}).join('');
+      box.innerHTML=L.map(function(x){return '<article class="card"><div class="thumb">'+(x.image?'<img src="'+esc(x.image)+'" alt="" loading="lazy">':'<span class="ph">&#9654;</span>')+(x.length?'<span class="len">'+esc(x.length)+'</span>':'')+(x.badge?'<span class="badge-off">'+esc(x.badge)+'</span>':'')+'</div><h3>'+esc(x.title)+'</h3>'+(x.desc?'<p>'+esc(x.desc)+'</p>':'')+'<div class="card-foot">'+(x.price?'<span class="price">'+(x.was?'<s class="was">'+esc(x.was)+'</s> ':'')+esc(x.price)+'</span>':'')+action(x,'Buy replay','Ask about it')+cryptoBtn(x)+'</div></article>'}).join('');
     }else if(k==='bundles'){
-      box.innerHTML=L.map(function(x){return '<article class="card"><p class="meta">Video + course + guide</p><h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p><div class="card-foot">'+(x.price?'<span class="price">'+esc(x.price)+'</span>':'')+action(x,'Get the bundle','Ask about it')+'</div></article>'}).join('');
+      box.innerHTML=L.map(function(x){return '<article class="card"><p class="meta">Video + course + guide</p><h3>'+esc(x.title)+'</h3><p>'+esc(x.desc)+'</p><div class="card-foot">'+(x.price?'<span class="price">'+esc(x.price)+'</span>':'')+action(x,'Get the bundle','Ask about it')+cryptoBtn(x)+'</div></article>'}).join('');
     }else if(k==='ebooks'){
       var wantFree=box.getAttribute('data-free')==='1';
       L=L.filter(function(x){return wantFree?x.free===true:x.free!==true});
