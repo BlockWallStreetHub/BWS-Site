@@ -832,7 +832,7 @@ function cpNum(p){var n=parseFloat(String(p||'').replace(/[^0-9.]/g,''));return 
 function cpFmt(n){var r=Math.round(n*100)/100;return '$'+(r%1===0?r.toLocaleString('en-US'):r.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}))}
 function cryptoBtn(item){
   if(!cpNum(item.price))return '';
-  return '<button type="button" class="btn-crypto" data-cp-open data-t="'+esc(item.title)+'" data-p="'+esc(item.price)+'">Pay with crypto, 10% off</button>';
+  return '<button type="button" class="btn-crypto" data-cp-open data-t="'+esc(item.title)+'" data-p="'+esc(item.price)+'">Pay with crypto, 10% off</button><a class="btn btn-ghost btn-small" href="#confirm" data-cp-confirm data-t="'+esc(item.title)+'">Confirm payment</a>';
 }
 d.addEventListener('click',function(e){
   var o=e.target.closest('[data-cp-open]'),dlg=d.getElementById('cryptoPay');
@@ -847,8 +847,8 @@ d.addEventListener('click',function(e){
     return;
   }
   var cf=e.target.closest('[data-cp-confirm]');
-  if(cf&&dlg){e.preventDefault();dlg.close();var sel=$('[data-purchase-select]'),t=d.getElementById('confirm');
-    if(sel&&dlg._t){for(var i=0;i<sel.options.length;i++)if(sel.options[i].text===dlg._t){sel.selectedIndex=i;break}}
+  if(cf){e.preventDefault();if(dlg&&dlg.open)dlg.close();var sel=$('[data-purchase-select]'),t=d.getElementById('confirm'),nm=cf.getAttribute('data-t')||(dlg&&dlg._t);
+    if(sel&&nm){for(var i=0;i<sel.options.length;i++)if(sel.options[i].text===nm){sel.selectedIndex=i;break}}
     if(t)t.scrollIntoView({behavior:'smooth'});return}
   var c=e.target.closest('[data-copy]');
   if(c){var v=c.getAttribute('data-copy');var done=function(){var t=c.textContent;c.textContent='Copied';setTimeout(function(){c.textContent=t},1400)};
