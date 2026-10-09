@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Consultations | Block Wall Street Academy</title>
-<meta name="description" content="Book a 1-on-1 session on Bitcoin, DeFi, trading, and self-banking.">
+<title>Bitcoin Family Bank Demo | Block Wall Street Academy</title>
+<meta name="description" content="An interactive Bitcoin family bank: a vault, family loans and yield engines, run month by month.">
 <meta name="theme-color" content="#04070F">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -649,45 +649,726 @@ sup.sn{font:800 .66rem var(--body);margin-left:2px}sup.sn a{color:var(--cyan);te
 </style>
 <script>document.documentElement.className+=' js'</script>
 </head>
-<body data-page="consultations">
+<body data-page="bitcoin-family-bank">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap bar">
     <a class="brand" href="index.html" aria-label="Block Wall Street Academy home"><span class="mark">BWS</span><span class="brand-name">Block Wall Street<small>Academy</small></span></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-    <nav id="primary-nav" class="primary-nav" aria-label="Primary"><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Learn<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="e-books.html">E-Books</a><a href="bitcoin-in-10-minutes.html">Bitcoin in 10 Minutes</a><a href="bitcoin-whitepaper.html">Bitcoin White Paper, Plain English</a><a href="rebuilding-black-wall-street.html">Rebuilding Black Wall Street</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Tools<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="tools.html">All tools</a><a href="bitcoin-atms.html">Find a Bitcoin ATM</a><a href="bitcoin-family-bank.html">Bitcoin Family Bank</a><a href="black-dollar-bitcoin.html">Black Dollar &amp; Bitcoin</a><a href="sats-converter.html">Sats converter</a><a href="dca-calculator.html">DCA calculator</a><a href="bitcoin-dashboard.html">Bitcoin dashboard</a><a href="priced-in-bitcoin.html">Priced in Bitcoin</a><a href="lp-simulator.html">Liquidity pool simulator</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">News<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="news.html">Daily crypto news</a><a href="newsletter.html">The Morning Brew newsletter</a></div></div><div class="nav-group has-current"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Work with us<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="consultations.html" aria-current="page">Consultations</a><a href="schedule.html">Schedule a session</a><a href="events.html">Events</a><a href="midas-star-funding.html">Midas Star Funding</a></div></div><a class="nav-direct" href="about.html">About</a><a class="nav-direct" href="donate.html">☕ Donate</a><a class="btn btn-gold btn-small nav-cta" href="schedule.html">Book a session</a></nav>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary"><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Learn<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="e-books.html">E-Books</a><a href="bitcoin-in-10-minutes.html">Bitcoin in 10 Minutes</a><a href="bitcoin-whitepaper.html">Bitcoin White Paper, Plain English</a><a href="rebuilding-black-wall-street.html">Rebuilding Black Wall Street</a></div></div><div class="nav-group has-current"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Tools<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="tools.html" aria-current="page">All tools</a><a href="bitcoin-atms.html">Find a Bitcoin ATM</a><a href="bitcoin-family-bank.html">Bitcoin Family Bank</a><a href="black-dollar-bitcoin.html">Black Dollar &amp; Bitcoin</a><a href="sats-converter.html">Sats converter</a><a href="dca-calculator.html">DCA calculator</a><a href="bitcoin-dashboard.html">Bitcoin dashboard</a><a href="priced-in-bitcoin.html">Priced in Bitcoin</a><a href="lp-simulator.html">Liquidity pool simulator</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">News<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="news.html">Daily crypto news</a><a href="newsletter.html">The Morning Brew newsletter</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Work with us<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="consultations.html">Consultations</a><a href="schedule.html">Schedule a session</a><a href="events.html">Events</a><a href="midas-star-funding.html">Midas Star Funding</a></div></div><a class="nav-direct" href="about.html">About</a><a class="nav-direct" href="donate.html">☕ Donate</a><a class="btn btn-gold btn-small nav-cta" href="schedule.html">Book a session</a></nav>
   </div>
 </header>
 <main id="main">
 <section class="page-head"><div class="wrap">
-  <p class="eyebrow">1-on-1 and group sessions</p>
-  <h1 class="" data-sweep><span class="line"><span class="sweep" style="--d:0.00s"><span class="t">Book a</span></span></span><span class="line"><span class="sweep" style="--d:0.14s"><span class="t"><span class="grad">session.</span></span></span></span></h1>
-  <p class="lead reveal">Need personalized guidance on blockchain, crypto, DeFi, or self-banking strategies? Work with Chicago Crypto Block Bully, founder of Block Wall Street, and get direct insight tailored to your goals.</p>
-</div></section>
-<section class="section tight"><div class="wrap split">
-  <div><h3 class="why-h reveal">Whether you're just getting started or ready to level up:</h3></div>
-  <ul class="dots plain reveal"><li>Understand blockchain basics</li><li>Navigate DeFi platforms and yield</li><li>Learn wallet setup &amp; self-banking tools</li><li>Build a plan with guided mentorship</li><li>Get clarity on course options &amp; strategy</li></ul>
+  <p class="eyebrow">Interactive demo</p>
+  <h1 class="" data-sweep><span class="line"><span class="sweep" style="--d:0.00s"><span class="t">Be the</span></span></span><span class="line"><span class="sweep" style="--d:0.14s"><span class="t"><span class="grad">bank.</span></span></span></span></h1>
+  <p class="lead reveal">A Bitcoin family bank in motion. Keep Bitcoin in a Vault, borrow against it instead of selling, lend to family, and put the rest to work. Press Play and watch the money move month by month.</p>
 </div></section>
 <section class="section tight"><div class="wrap">
-  <div class="group-head"><h2>Choose a session</h2><p class="muted">Buy your session, then pick a time on the <a class="text-link" href="schedule.html">schedule page</a>.</p></div>
-  <ul class="offer-rows plain" data-offers="consultations"></ul>
-  <p class="muted small note">Sessions are educational. Nothing offered is financial, legal, or tax advice, and there are no guaranteed returns.</p>
-</div></section>
-<section class="section band" id="confirm"><div class="wrap split">
-  <div><p class="eyebrow">After you pay</p><h2 class="" data-sweep><span class="line"><span class="sweep" style="--d:0.00s"><span class="t">Confirm your</span></span></span><span class="line"><span class="sweep" style="--d:0.14s"><span class="t"><span class="grad">purchase.</span></span></span></span></h2>
-    <p class="lead reveal">Paid for a session or a recording? Send us a quick confirmation and we'll email you to get everything set. For a session, tell us the time you booked or a few that work for you. For a recording, tell us the email you used at checkout so we can send your access.</p>
-    <p class="muted small">Stripe also emails you a receipt. Check your spam folder if you don't see it.</p></div>
-  <form class="form" action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="cbde23f6-f617-4b16-953f-7b0aab0e9f58"><input type="hidden" name="subject" value="Purchase confirmation from the website"><input type="hidden" name="from_name" value="BWS website">
-    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" style="display:none">
-    <label>Your name<input type="text" name="name" autocomplete="name" required></label>
-    <label>Email you used at checkout<input type="email" name="email" autocomplete="email" required></label>
-    <label>What did you buy?<select name="purchase" data-purchase-select required><option value="">Choose one</option><option>1 Hr. Consultation</option><option>One-on-One Mentorship Program</option><option>Group Mentorship Program</option><option>Understanding Yield Farming</option><option>Learn Self Banking</option><option>Reintroduction To AVAX Recording &amp; Full Course</option><option>Introduction To Tokenized Stocks and Investing On-chain</option><option>Introduction To XRP and Decentralized Opportunities</option><option>Introduction To Arc Network</option><option>Introduction To Robinhood Chain</option><option>Understanding Gold, Silver, &amp; Gold Backs Trust</option><option>Introduction To Crypto Wallets</option><option>Introduction To Neo Banks</option><option>Other</option></select></label>
-    <label>Your booked time, or times that work (sessions only)<textarea name="times" rows="3" placeholder="Example: Booked Thursday 6 PM CST, or Tue/Thu evenings"></textarea></label>
-    <button class="btn btn-gold" type="submit">Send confirmation</button>
-  </form>
-</div></section>
+  <div class="fb-intro reveal">
+    <div><b>1. Pick a scenario</b>See how the bank behaves when price rips up, chops sideways, or pulls back.</div>
+    <div><b>2. Press Play</b>Coins travel through the Vault, loan book, yield engines and reserve, one month at a time.</div>
+    <div><b>3. Make it yours</b>Add capital, lend to family, change the rates and rules, and compare against simply holding Bitcoin.</div>
+  </div>
+  <div class="fb-panel"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  .bfb-root{
+    --paper:#e8eee9; --paper2:#f6f9f5; --ink:#0f3d2e; --deep:#082a20; --mid:#2f6b52;
+    --line:#b3c6ba; --orange:#f08a00; --red:#a8321f;
+    --serif:'Fraunces', Georgia, 'Times New Roman', serif;
+    --sans:'Public Sans', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+    container-type:inline-size;
+    box-sizing:border-box;width:100%;max-width:1180px;margin:0 auto;
+    background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;
+    padding:clamp(18px,3vw,36px);border-top:6px double var(--ink);border-bottom:6px double var(--ink);
+    text-align:left;
+  }
+  .bfb-root *,.bfb-root *::before,.bfb-root *::after{box-sizing:border-box}
+  .bfb-root h2,.bfb-root h3,.bfb-root p,.bfb-root ul,.bfb-root li,.bfb-root dl,.bfb-root dt,.bfb-root dd{margin:0;padding:0;text-transform:none;letter-spacing:normal}
+  .bfb-root :focus-visible{outline:3px solid var(--orange);outline-offset:3px}
 
+  .bfb-head h2{font-family:var(--serif);font-weight:800;font-size:clamp(32px,5.4cqw,56px);line-height:1.02;letter-spacing:-.01em;color:var(--deep)}
+  .bfb-head p{max-width:46ch;margin-top:10px;font-family:var(--serif);font-weight:500;font-size:clamp(18px,2.2cqw,23px);line-height:1.35}
+
+  .bfb-grid{display:grid;grid-template-columns:1fr;gap:26px;margin-top:26px;align-items:start}
+  @container (min-width:820px){.bfb-grid{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:44px}}
+
+  .bfb-plate{border:2px solid var(--ink);background:var(--paper2);padding:10px;position:relative}
+  .bfb-plate::before{content:"";position:absolute;inset:5px;border:1px solid var(--line);pointer-events:none}
+  .bfb-root svg{width:100%;height:auto;display:block;max-width:none}
+  .bfb-root svg text{font-family:var(--sans)}
+  .bfb-f{font-family:var(--serif)!important}
+  .bfb-g{transition:opacity .35s ease}
+  .bfb-dim{opacity:.18}
+  .bfb-guides{opacity:0;transition:opacity .5s ease}
+  .bfb-live .bfb-guides{opacity:.8}
+  .bfb-guides path{fill:none;stroke:#9bb3a5;stroke-width:1.6;stroke-dasharray:3 6}
+  .bfb-guides path.bfb-hid{stroke:none}
+  .bfb-arc{fill:none;stroke:var(--orange);stroke-width:3.2;stroke-dasharray:10 8;animation:bfb-run 1.6s linear infinite}
+  @keyframes bfb-run{to{stroke-dashoffset:-36}}
+  @media(prefers-reduced-motion:reduce){.bfb-arc{animation:none}}
+  .bfb-nd{fill:var(--paper2);stroke:var(--ink);stroke-width:2}
+  .bfb-nt{fill:var(--deep);font-size:15px;font-weight:700;text-anchor:middle}
+  .bfb-ns{fill:var(--mid);font-size:11.5px;font-weight:600;text-anchor:middle}
+  .bfb-nl{fill:var(--ink);font-size:11.5px;text-anchor:middle}
+  .bfb-nv{fill:var(--deep);font-size:12.5px;font-weight:700;text-anchor:middle}
+
+  .bfb-when h3,.bfb-sec h3{font-family:var(--serif);font-weight:700;font-size:26px;line-height:1.2;margin-bottom:10px;color:var(--deep)}
+  .bfb-when ul{list-style:none;border-top:2px solid var(--ink)}
+  .bfb-when li{border-bottom:1px solid var(--line);list-style:none}
+  .bfb-when li::marker{content:""}
+  .bfb-when button[data-m]{all:unset;box-sizing:border-box;display:block;width:100%;cursor:pointer;padding:12px 12px 12px 18px;font-family:var(--sans);font-size:18px;font-weight:600;color:var(--ink);position:relative;transition:background .2s}
+  .bfb-when button[data-m]::before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:6px;background:transparent;transition:background .2s}
+  .bfb-when button[data-m]:hover{background:rgba(15,61,46,.06)}
+  .bfb-when button[data-m][aria-selected="true"]{background:var(--ink);color:var(--paper2)}
+  .bfb-when button[data-m][aria-selected="true"]::before{background:var(--orange)}
+  .bfb-when button[data-m]:focus-visible{outline:3px solid var(--orange);outline-offset:-3px}
+  .bfb-say{margin-top:14px;min-height:112px;font-size:16.5px}
+  .bfb-say b{font-family:var(--serif);font-size:20px;display:block;margin-bottom:4px;color:var(--deep)}
+  .bfb-say i{display:block;margin-top:6px;font-size:14.5px;color:var(--mid)}
+
+  /* controls */
+  .bfb-root .bfb-btn{box-sizing:border-box;cursor:pointer;font:600 16px/1.2 var(--sans);padding:11px 16px;border:2px solid var(--ink);background:var(--ink);color:var(--paper2);border-radius:3px;transition:background .2s,color .2s;text-align:center}
+  .bfb-root .bfb-btn:hover{background:var(--deep)}
+  .bfb-root .bfb-btn.bfb-alt{background:transparent;color:var(--ink)}
+  .bfb-root .bfb-btn.bfb-alt:hover{background:rgba(15,61,46,.08)}
+  .bfb-root .bfb-btn.bfb-go{background:var(--orange);border-color:var(--ink);color:var(--deep)}
+  .bfb-root .bfb-btn.bfb-go:hover{background:#ffa31f}
+  .bfb-root input[type=number],.bfb-root select{font:500 16px var(--sans);color:var(--ink);background:var(--paper2);border:2px solid var(--ink);border-radius:3px;padding:9px 10px;width:100%;margin:0}
+  .bfb-root input[type=range]{width:100%;accent-color:var(--ink);margin:0}
+  .bfb-root input[type=checkbox]{accent-color:var(--ink);width:18px;height:18px;margin:0}
+
+  .bfb-run{margin-top:18px;padding-top:16px;border-top:2px solid var(--ink)}
+  .bfb-btns{display:flex;flex-wrap:wrap;gap:8px}
+  .bfb-spd{display:flex;align-items:center;gap:10px;margin-top:10px;font-weight:600;font-size:15px}
+  .bfb-spd select{width:auto;padding:6px 8px}
+  .bfb-clock{margin-top:12px;font-family:var(--serif);font-size:22px;font-weight:700;color:var(--deep)}
+  .bfb-clock span{font-family:var(--sans);font-size:15px;font-weight:500;color:var(--mid)}
+  .bfb-meter{margin-top:12px}
+  .bfb-bar{position:relative;height:14px;border:2px solid var(--ink);background:linear-gradient(90deg,#7fb596 0 37.5%,#f0b44a 37.5% 62.5%,#c4564a 62.5% 100%)}
+  .bfb-needle{position:absolute;top:-6px;bottom:-6px;width:4px;margin-left:-2px;background:var(--deep);left:0;transition:left .4s ease}
+  .bfb-mlabel{margin-top:6px;font-size:15px;font-weight:600}
+  .bfb-msg{margin-top:12px;min-height:52px;font-size:15.5px;border-left:5px solid var(--orange);padding:4px 0 4px 12px}
+  .bfb-rule{margin-top:18px;border:2px solid var(--ink);padding:14px 16px;background:var(--paper2)}
+  .bfb-rule b{font-family:var(--serif);font-size:18px;display:block;margin-bottom:2px;color:var(--deep)}
+  .bfb-rule p{font-size:16px;font-weight:500}
+
+  /* sections below */
+  .bfb-sec{margin-top:44px}
+  .bfb-sec > h2{font-family:var(--serif);font-weight:800;font-size:clamp(26px,3.8cqw,40px);line-height:1.05;color:var(--deep);letter-spacing:-.01em}
+  .bfb-sec > p.bfb-sub{max-width:62ch;color:var(--mid);font-weight:500;margin:6px 0 14px}
+  .bfb-acts{border-top:3px solid var(--ink)}
+  .bfb-act{display:grid;grid-template-columns:1fr;gap:8px;padding:14px 0;border-bottom:1px solid var(--line);align-items:center}
+  @container (min-width:720px){.bfb-act{grid-template-columns:minmax(0,1.5fr) 170px 190px;gap:18px}}
+  .bfb-act label{font-family:var(--serif);font-weight:700;font-size:19px;line-height:1.2;color:var(--deep)}
+  .bfb-act label small{display:block;font-family:var(--sans);font-weight:500;font-size:14.5px;color:var(--mid);margin-top:3px}
+  .bfb-money{position:relative}
+  .bfb-money span{position:absolute;left:11px;top:50%;transform:translateY(-50%);font-weight:600;pointer-events:none}
+  .bfb-root .bfb-money input{padding-left:24px}
+  .bfb-bring{display:grid;grid-template-columns:1fr;gap:8px}
+
+  .bfb-set{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px 18px;margin-top:6px}
+  .bfb-set label{display:block;font-weight:600;font-size:15px;line-height:1.3}
+  .bfb-set label small{display:block;font-weight:500;color:var(--mid);font-size:13px;margin:2px 0 5px}
+  .bfb-set .bfb-chk{display:flex;gap:10px;align-items:flex-start}
+  .bfb-split{margin-top:20px;border-top:1px solid var(--line);padding-top:14px}
+  .bfb-split h3{font-size:20px;margin-bottom:2px}
+  .bfb-srow{display:grid;grid-template-columns:150px minmax(0,1fr) 52px;gap:10px;align-items:center;padding:5px 0;font-weight:600;font-size:15px}
+  .bfb-srow output{text-align:right;font-variant-numeric:tabular-nums}
+
+  .bfb-res{display:grid;grid-template-columns:1fr;gap:26px;align-items:start}
+  @container (min-width:820px){.bfb-res{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:40px}}
+  .bfb-dl{border-top:3px solid var(--ink)}
+  .bfb-dl div{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:16px}
+  .bfb-dl dt{font-weight:500}
+  .bfb-dl dd{font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+  .bfb-dl .bfb-tot{background:rgba(15,61,46,.07);padding-left:8px;padding-right:8px}
+  .bfb-chartbox{border:2px solid var(--ink);background:var(--paper2);padding:8px}
+  .bfb-note{margin-top:8px;font-size:14px;color:var(--mid)}
+  .bfb-foot{margin-top:30px;font-size:14px;color:var(--mid);max-width:84ch}
+  .bfb-foot p+p{margin-top:8px}
+</style>
+
+<div class="bfb-root">
+  <div class="bfb-head">
+    <h2>Be the bank.</h2>
+    <p>Build generational wealth with Bitcoin that appreciates, and a family bank that funds your life.</p>
+  </div>
+
+  <div class="bfb-grid">
+    <div class="bfb-plate">
+      <svg viewBox="0 0 640 640" role="img" aria-label="Bitcoin family bank flywheel. The Vault at the center feeds an optional borrow step, then the family loan book and yield engines. Returns route to the family reserve, which stacks more Bitcoin in the Vault or extracts cash flow for the family. Coins move along the paths when the simulation runs.">
+        <defs>
+          <marker id="bfb-mInk" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f3d2e"/></marker>
+          <marker id="bfb-mOr" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#f08a00"/></marker>
+          <marker id="bfb-mGr" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2f6b52"/></marker>
+        </defs>
+
+        <g data-rosette="1" aria-hidden="true"></g>
+        <circle cx="320" cy="320" r="230" fill="none" stroke="#b3c6ba" stroke-width="1.2" aria-hidden="true"/>
+        <g data-guides="1" class="bfb-guides" aria-hidden="true"></g>
+
+        <g data-p="a1" class="bfb-g"><path class="bfb-arc" d="M420.8,113.3 A230,230 0 0 1 543.2,264.4" marker-end="url(#bfb-mOr)"/></g>
+        <g data-p="a2" class="bfb-g"><path class="bfb-arc" d="M543.2,375.6 A230,230 0 0 1 420.8,526.7" marker-end="url(#bfb-mOr)"/></g>
+        <g data-p="a3" class="bfb-g"><path class="bfb-arc" d="M219.2,526.7 A230,230 0 0 1 96.8,375.6" marker-end="url(#bfb-mOr)"/></g>
+
+        <g data-p="spokeOut" class="bfb-g">
+          <path d="M320,226 V136" stroke="#0f3d2e" stroke-width="2.5" fill="none" marker-end="url(#bfb-mInk)"/>
+          <text x="332" y="186" fill="#0f3d2e" font-size="12" font-style="italic">borrow, don't sell</text>
+        </g>
+        <g data-p="spokeIn" class="bfb-g">
+          <path d="M172,320 H224" stroke="#0f3d2e" stroke-width="2.5" fill="none" marker-end="url(#bfb-mInk)"/>
+          <text x="198" y="310" text-anchor="middle" fill="#0f3d2e" font-size="10.5" font-weight="600">stack BTC</text>
+        </g>
+
+        <g data-p="vault" class="bfb-g">
+          <circle cx="320" cy="320" r="96" fill="none" stroke="#f08a00" stroke-width="2" stroke-dasharray="2 5"/>
+          <circle cx="320" cy="320" r="92" fill="#0f3d2e"/>
+          <text x="320" y="262" text-anchor="middle" fill="#f08a00" font-size="12" font-weight="700">Head 1: Growth</text>
+          <text x="320" y="300" text-anchor="middle" fill="#f6f9f5" font-size="30" font-weight="800" class="bfb-f">The Vault</text>
+          <text x="320" y="326" text-anchor="middle" fill="#f6f9f5" font-size="15" font-weight="700" data-t="vaultBtc">0.0000 BTC</text>
+          <text x="320" y="347" text-anchor="middle" fill="#f6f9f5" font-size="13" font-weight="600" data-t="vaultUsd">$0</text>
+          <text x="320" y="366" text-anchor="middle" fill="#cfe0d5" font-size="11.5">Multisig, cold storage</text>
+        </g>
+
+        <g data-p="borrow" class="bfb-g">
+          <rect class="bfb-nd" x="240" y="51" width="160" height="78" rx="4" stroke-dasharray="6 4"/>
+          <text class="bfb-nt bfb-f" x="320" y="73">Optional borrow</text>
+          <text class="bfb-ns" x="320" y="91">Lock BTC, borrow stables</text>
+          <text class="bfb-nl" x="320" y="107">LTV about 30% or less</text>
+          <text class="bfb-nv" x="320" y="122" data-t="debt">Debt $0</text>
+        </g>
+
+        <g data-p="loan" class="bfb-g">
+          <rect class="bfb-nd" x="470" y="281" width="160" height="78" rx="4"/>
+          <text class="bfb-nt bfb-f" x="550" y="303">Family loan book</text>
+          <text class="bfb-ns" x="550" y="321">Head 2: Lending</text>
+          <text class="bfb-nl" x="550" y="337">Tuition, home, business</text>
+          <text class="bfb-nv" x="550" y="352" data-t="loans">Out $0</text>
+        </g>
+
+        <g data-p="yield" class="bfb-g">
+          <rect class="bfb-nd" x="240" y="511" width="160" height="78" rx="4"/>
+          <text class="bfb-nt bfb-f" x="320" y="533">Yield engines</text>
+          <text class="bfb-ns" x="320" y="551">Head 3: Cash flow</text>
+          <text class="bfb-nl" x="320" y="567">WBTC/ETH, WBTC/USDC</text>
+          <text class="bfb-nv" x="320" y="582" data-t="engines">Working $0</text>
+        </g>
+
+        <g data-p="reserve" class="bfb-g">
+          <rect class="bfb-nd" x="10" y="281" width="160" height="78" rx="4"/>
+          <text class="bfb-nt bfb-f" x="90" y="303">Family reserve</text>
+          <text class="bfb-ns" x="90" y="321">Stablecoin dry powder</text>
+          <text class="bfb-nl" x="90" y="337">that stays in the bank</text>
+          <text class="bfb-nv" x="90" y="352" data-t="reserve">$0</text>
+        </g>
+
+        <g data-p="route" class="bfb-g">
+          <circle cx="143.8" cy="467.9" r="23" fill="#f08a00" stroke="#0f3d2e" stroke-width="2"/>
+          <text x="143.8" y="475" text-anchor="middle" fill="#082a20" font-size="21" font-weight="800" class="bfb-f">3</text>
+          <text x="175" y="472" fill="#0f3d2e" font-size="14" font-weight="700">Route</text>
+        </g>
+
+        <g data-p="extract" class="bfb-g">
+          <path d="M50,362 V554" stroke="#2f6b52" stroke-width="2.5" fill="none" marker-end="url(#bfb-mGr)"/>
+          <rect x="20" y="560" width="150" height="62" rx="4" fill="#2f6b52" stroke="#0f3d2e" stroke-width="2"/>
+          <text x="95" y="580" text-anchor="middle" fill="#f6f9f5" font-size="16" font-weight="700" class="bfb-f">Extract</text>
+          <text x="95" y="595" text-anchor="middle" fill="#e3efe7" font-size="11">Cash flow that funds your family's life</text>
+          <text x="95" y="612" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="700" data-t="extracted">$0 taken</text>
+        </g>
+
+        <g data-p="compound" class="bfb-g">
+          <circle cx="452" cy="548" r="4" fill="#f08a00"/>
+          <text x="464" y="552" fill="#0f3d2e" font-size="12" font-weight="600">Repayments and interest</text>
+          <text x="464" y="567" fill="#0f3d2e" font-size="12" font-weight="600">stack more Bitcoin</text>
+          <circle cx="452" cy="592" r="4" fill="#f08a00"/>
+          <text x="464" y="596" fill="#0f3d2e" font-size="12" font-weight="600">Returns compound into</text>
+          <text x="464" y="611" fill="#0f3d2e" font-size="12" font-weight="600">more engines</text>
+        </g>
+
+        <g data-particles="1" aria-hidden="true"></g>
+      </svg>
+    </div>
+
+    <div class="bfb-when">
+      <h3>What if price…</h3>
+      <ul role="tablist">
+        <li><button type="button" role="tab" data-m="full" aria-selected="true">Show the full setup</button></li>
+        <li><button type="button" role="tab" data-m="rips" aria-selected="false">Rips up</button></li>
+        <li><button type="button" role="tab" data-m="chops" aria-selected="false">Chops sideways</button></li>
+        <li><button type="button" role="tab" data-m="pulls" aria-selected="false">Pulls back</button></li>
+      </ul>
+      <p class="bfb-say" data-say="1" aria-live="polite"></p>
+
+      <div class="bfb-run">
+        <div class="bfb-btns">
+          <button type="button" class="bfb-btn bfb-go" data-ctl="play" aria-pressed="false">Play</button>
+          <button type="button" class="bfb-btn bfb-alt" data-ctl="step">Next month</button>
+          <button type="button" class="bfb-btn bfb-alt" data-ctl="reset">Reset to example</button>
+          <button type="button" class="bfb-btn bfb-alt" data-ctl="empty">Start empty</button>
+        </div>
+        <div class="bfb-spd"><label for="bfb-speed-1">Speed</label>
+          <select id="bfb-speed-1" data-f="speed">
+            <option value="1500">Slow</option>
+            <option value="900" selected>Normal</option>
+            <option value="450">Fast</option>
+            <option value="200">Turbo</option>
+          </select>
+        </div>
+        <div class="bfb-clock" data-o="clock">Month 0 <span>Bitcoin $0</span></div>
+        <div class="bfb-meter">
+          <div class="bfb-bar"><div class="bfb-needle" data-needle="1"></div></div>
+          <div class="bfb-mlabel" data-o="meter">LTV 0%</div>
+        </div>
+        <p class="bfb-msg" data-msg="1" role="status" aria-live="polite">Press Play to watch the example family bank run month by month, or use the buttons below to add your own capital.</p>
+      </div>
+
+      <div class="bfb-rule">
+        <b>The rule</b>
+        <p>Borrow against Bitcoin, never sell it. Only borrow what you can repay.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="bfb-sec">
+    <h2>Put capital to work</h2>
+    <p class="bfb-sub">Each button moves real dollars through the diagram. Try them while the months are running.</p>
+    <div class="bfb-acts">
+      <div class="bfb-act">
+        <label for="bfb-a1">Add capital to the Vault<small>New money buys Bitcoin and goes into the Vault.</small></label>
+        <div class="bfb-money"><span>$</span><input id="bfb-a1" type="number" min="0" step="100" value="5000" data-f="aVault"></div>
+        <button type="button" class="bfb-btn" data-act="addVault">Add to Vault</button>
+      </div>
+      <div class="bfb-act">
+        <label for="bfb-a2">Borrow against the Vault<small data-o="maxBorrow">Stablecoins land in the family reserve.</small></label>
+        <div class="bfb-money"><span>$</span><input id="bfb-a2" type="number" min="0" step="100" value="5000" data-f="aBorrow"></div>
+        <button type="button" class="bfb-btn" data-act="borrow">Borrow</button>
+      </div>
+      <div class="bfb-act">
+        <label for="bfb-a3">Lend to a family member<small>Taken from the reserve, repaid monthly with interest.</small></label>
+        <div class="bfb-money"><span>$</span><input id="bfb-a3" type="number" min="0" step="100" value="3000" data-f="aLend"></div>
+        <button type="button" class="bfb-btn" data-act="lend">Make the loan</button>
+      </div>
+      <div class="bfb-act">
+        <label for="bfb-a4">Put reserve cash into the yield engines<small>Moves stablecoins from the reserve into the pools.</small></label>
+        <div class="bfb-money"><span>$</span><input id="bfb-a4" type="number" min="0" step="100" value="2000" data-f="aEngines"></div>
+        <button type="button" class="bfb-btn" data-act="toEngines">Send to engines</button>
+      </div>
+      <div class="bfb-act">
+        <label for="bfb-a5">Pay down the borrowed amount<small>Uses reserve cash, which lowers your LTV.</small></label>
+        <div class="bfb-money"><span>$</span><input id="bfb-a5" type="number" min="0" step="100" value="2000" data-f="aRepay"></div>
+        <button type="button" class="bfb-btn" data-act="repay">Repay from reserve</button>
+      </div>
+      <div class="bfb-act">
+        <label for="bfb-a6">Bring in outside yield farming capital<small>Money you earned in pools outside the bank. Choose where it lands.</small></label>
+        <div class="bfb-bring">
+          <div class="bfb-money"><span>$</span><input id="bfb-a6" type="number" min="0" step="100" value="5000" data-f="aOutside"></div>
+          <select aria-label="Where the outside capital goes" data-f="aOutsideTo">
+            <option value="vault">Into the Vault as Bitcoin</option>
+            <option value="engines" selected>Into the yield engines</option>
+            <option value="reserve">Into the family reserve</option>
+          </select>
+        </div>
+        <button type="button" class="bfb-btn bfb-go" data-act="bringIn">Bring it in</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="bfb-sec">
+    <h2>Rates and rules</h2>
+    <p class="bfb-sub">Change anything, then press Play. Starting price and starting Vault take effect when you reset.</p>
+    <div class="bfb-set">
+      <label>Bitcoin price at the start<small>Type today's price.</small><div class="bfb-money"><span>$</span><input type="number" min="1" step="1000" value="100000" data-f="startPrice"></div></label>
+      <label>Starting Vault<small>Your own money in Bitcoin on day one.</small><div class="bfb-money"><span>$</span><input type="number" min="0" step="1000" value="50000" data-f="startVault"></div></label>
+      <label>New money into the Vault each month<small>Your regular stacking.</small><div class="bfb-money"><span>$</span><input type="number" min="0" step="50" value="500" data-f="monthlyAdd"></div></label>
+      <label>Outside yield farming income each month<small>Earned elsewhere, sent into the Route.</small><div class="bfb-money"><span>$</span><input type="number" min="0" step="50" value="200" data-f="outsideIncome"></div></label>
+      <label>Borrow rate a year (%)<small>What the platform charges.</small><input type="number" min="0" step="0.5" value="8" data-f="borrowApr"></label>
+      <label>Family loan rate a year (%)<small>What the bank charges family.</small><input type="number" min="0" step="0.5" value="9" data-f="famRate"></label>
+      <label>Family loan length (months)<small>Straight-line repayment.</small><input type="number" min="1" step="1" value="36" data-f="termMonths"></label>
+      <label>Payments received on time (%)<small>Below 100 means some are late.</small><input type="number" min="0" max="100" step="1" value="95" data-f="onTime"></label>
+      <label>Yield engine return a year (%)<small>Your guess for the pools, not a promise.</small><input type="number" min="0" step="0.5" value="12" data-f="engineApy"></label>
+      <label>Borrowing limit (LTV %)<small>The bank will not borrow past this.</small><input type="number" min="1" max="70" step="1" value="40" data-f="maxLtv"></label>
+      <label class="bfb-chk"><input type="checkbox" checked data-f="autoDefend"><span>Defend automatically<small>If LTV passes 40%, pay debt down to 35% using reserve cash.</small></span></label>
+    </div>
+    <div class="bfb-split">
+      <h3>Where the earnings go (the Route)</h3>
+      <div class="bfb-srow"><label for="bfb-w1">Stack Bitcoin</label><input id="bfb-w1" type="range" min="0" max="100" value="50" data-f="wStack"><output data-wo="wStack">50%</output></div>
+      <div class="bfb-srow"><label for="bfb-w2">Keep in reserve</label><input id="bfb-w2" type="range" min="0" max="100" value="20" data-f="wReserve"><output data-wo="wReserve">20%</output></div>
+      <div class="bfb-srow"><label for="bfb-w3">Compound into engines</label><input id="bfb-w3" type="range" min="0" max="100" value="20" data-f="wCompound"><output data-wo="wCompound">20%</output></div>
+      <div class="bfb-srow"><label for="bfb-w4">Extract for life</label><input id="bfb-w4" type="range" min="0" max="100" value="10" data-f="wExtract"><output data-wo="wExtract">10%</output></div>
+    </div>
+  </section>
+
+  <section class="bfb-sec">
+    <h2>How the bank is doing</h2>
+    <p class="bfb-sub">Compared with putting the same outside money straight into Bitcoin and doing nothing else.</p>
+    <div class="bfb-res">
+      <dl class="bfb-dl">
+        <div><dt>Bitcoin price</dt><dd data-o="price">$0</dd></div>
+        <div><dt>Vault</dt><dd data-o="vault">$0</dd></div>
+        <div><dt>Borrowed (debt)</dt><dd data-o="debt">$0</dd></div>
+        <div><dt>Family reserve</dt><dd data-o="reserve">$0</dd></div>
+        <div><dt>Out on family loans</dt><dd data-o="loans">$0</dd></div>
+        <div><dt>In the yield engines</dt><dd data-o="engines">$0</dd></div>
+        <div><dt>Cash taken out</dt><dd data-o="extracted">$0</dd></div>
+        <div><dt>Outside capital brought in</dt><dd data-o="outside">$0</dd></div>
+        <div class="bfb-tot"><dt>Family bank total value</dt><dd data-o="total">$0</dd></div>
+        <div class="bfb-tot"><dt>Just holding Bitcoin</dt><dd data-o="hold">$0</dd></div>
+        <div class="bfb-tot"><dt>Difference</dt><dd data-o="diff">$0</dd></div>
+      </dl>
+      <div>
+        <div class="bfb-chartbox"><svg viewBox="0 0 640 250" role="img" aria-label="Line chart of family bank total value compared with just holding Bitcoin, by month." data-chart="1"></svg></div>
+        <p class="bfb-note">Total value counts the Vault, reserve, family loans, engines and cash taken out, minus the debt.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="bfb-foot">
+    <p>The Vault is held in multisig and cold storage, with an heirs and inheritance plan, and is never sold.</p>
+    <p>Educational use only, not financial advice. This is a simplified model. The price paths are made up and are not forecasts, and the demo leaves out taxes, fees, impermanent loss and missed loan payments beyond the on-time setting. Borrowing against crypto carries liquidation risk. Only invest money you won't need to pull out.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  var all=['vault','spokeOut','spokeIn','borrow','loan','yield','reserve','route','extract','compound','a1','a2','a3'];
+  var modes={
+    full:{on:all,
+      t:'<b>The full setup</b>Bitcoin sits in the Vault. Borrowed stablecoins and fresh capital fund the family loan book and the yield engines. Everything they earn is routed back into more Bitcoin, more engines, or the reserve.',
+      p:'Price path while running: up 1.5% a month.'},
+    rips:{on:['vault','spokeIn','reserve','extract'],
+      t:'<b>Price rips up</b>The Vault does the heavy lifting. Your loan-to-value falls on its own, so you have no need to take on more debt. Keep stacking, and do not sell into strength.',
+      p:'Price path while running: up 4% a month.'},
+    chops:{on:['loan','yield','a1','a2','a3','route','reserve','extract','compound'],
+      t:'<b>Price chops sideways</b>This is where the engines earn. Loans are repaid with interest, pools collect fees, and the reserve fills up while the Vault waits.',
+      p:'Price path while running: swings about 5% either side of flat.'},
+    pulls:{on:['vault','spokeIn','reserve','route'],
+      t:'<b>Price pulls back</b>Stop borrowing. Use the reserve to pay down debt and keep the health factor high, and add to the Vault if you can. Never sell Bitcoin to cover a loan.',
+      p:'Price path while running: down 5% a month for 8 months, then up 1% a month.'}
+  };
+  var GUIDE={
+    capIn:{d:'M20,150 Q200,160 258,262',v:1},
+    spokeOut:{d:'M320,226 V136'},
+    spokeIn:{d:'M172,320 H224'},
+    stablesIn:{d:'M240,90 Q90,100 90,278',v:1},
+    lend:{d:'M170,335 Q320,520 470,345',v:1},
+    toEngines:{d:'M150,361 Q230,430 265,510',v:1},
+    yieldOut:{d:'M240,548 Q190,545 168,485',v:1},
+    routeToReserve:{d:'M138,445 Q112,405 112,362',v:1},
+    compound:{d:'M160,490 Q200,525 240,540',v:1},
+    extractLine:{d:'M50,362 V554'},
+    outsideRoute:{d:'M2,440 Q70,440 118,462',v:1},
+    outsideReserve:{d:'M70,205 V278',v:1},
+    outsideEngines:{d:'M320,639 V592',v:1},
+    a2:{d:'M543.2,375.6 A230,230 0 0 1 420.8,526.7'}
+  };
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ORANGE='#f08a00', GREEN='#2f6b52';
+
+  function money(n){return (n<0?'-':'')+'$'+Math.round(Math.abs(n)).toLocaleString('en-US');}
+  function short(n){var a=Math.abs(n),s=n<0?'-':'';if(a>=1e6)return s+'$'+(a/1e6).toFixed(1)+'M';if(a>=1e3)return s+'$'+Math.round(a/1e3)+'k';return s+'$'+Math.round(a);}
+
+  function init(root){
+    if(root.getAttribute('data-ready'))return;
+    root.setAttribute('data-ready','1');
+    function $(s){return root.querySelector(s);}
+    function $$(s){return root.querySelectorAll(s);}
+    function F(k){return $('[data-f="'+k+'"]');}
+    function num(k){var v=parseFloat(F(k).value);return isFinite(v)&&v>0?v:0;}
+    function pct(k){return num(k)/100;}
+
+    /* rosette */
+    var ro=$('[data-rosette]');
+    for(var i=0;i<36;i++){
+      var e=document.createElementNS(NS,'ellipse');
+      e.setAttribute('cx',320);e.setAttribute('cy',320);e.setAttribute('rx',250);e.setAttribute('ry',104);
+      e.setAttribute('transform','rotate('+(i*5)+' 320 320)');
+      e.setAttribute('fill','none');e.setAttribute('stroke','#2f6b52');e.setAttribute('stroke-width','.8');e.setAttribute('opacity','.2');
+      ro.appendChild(e);
+    }
+    /* guide paths */
+    var gg=$('[data-guides]'), gp={};
+    Object.keys(GUIDE).forEach(function(k){
+      var p=document.createElementNS(NS,'path');
+      p.setAttribute('d',GUIDE[k].d);
+      if(!GUIDE[k].v)p.setAttribute('class','bfb-hid');
+      gg.appendChild(p);gp[k]={el:p,len:p.getTotalLength()};
+    });
+    var pg=$('[data-particles]');
+
+    /* state */
+    var S, mode='full', modeMonth=0, playing=false, timer=null;
+    function vaultVal(){return S.btc*S.price;}
+    function loansOut(){var t=0;S.loans.forEach(function(l){t+=l.rem;});return t;}
+    function ltv(){var v=vaultVal();return v>0?S.debt/v:(S.debt>0?1:0);}
+    function net(){return vaultVal()+S.reserve+S.engines+loansOut()+S.extracted-S.debt;}
+    function holdVal(){return S.holdBtc*S.price;}
+    function pushHist(){S.hist.push({m:S.month,net:net(),hold:holdVal()});}
+
+    function resetState(example){
+      var p0=num('startPrice')||100000, v=num('startVault');
+      S={month:0,price:p0,btc:v/p0,debt:0,reserve:0,engines:0,loans:[],extracted:0,outside:0,holdBtc:v/p0,hist:[]};
+      if(example&&v>0){
+        var b=v*0.3, term=Math.max(1,num('termMonths')||36);
+        S.debt=b;
+        S.loans.push({rem:b/3,step:(b/3)/term});
+        S.engines=b*0.5;
+        S.reserve=b-b/3-b*0.5;
+      }
+      modeMonth=0;
+      pushHist();
+    }
+
+    function monthlyReturn(m){
+      if(mode==='rips')return 0.04;
+      if(mode==='pulls')return m<=8?-0.05:0.01;
+      if(mode==='chops')return (1+0.05*Math.sin(m*0.9))/(1+0.05*Math.sin((m-1)*0.9))-1;
+      return 0.015;
+    }
+
+    /* particles */
+    var parts=[], raf=null;
+    function interval(){return parseInt(F('speed').value,10)||900;}
+    function fly(seq,color,count){
+      if(reduce)return;
+      var dur=Math.max(500,Math.min(1200,interval()*1.05)), now=performance.now();
+      for(var i=0;i<(count||2);i++){
+        var c=document.createElementNS(NS,'circle');
+        c.setAttribute('r','6.5');c.setAttribute('fill',color||ORANGE);c.setAttribute('stroke','#0f3d2e');c.setAttribute('stroke-width','1.6');c.setAttribute('opacity','0');
+        pg.appendChild(c);
+        parts.push({el:c,seq:seq,t0:now+i*150,dur:dur});
+      }
+      if(!raf)raf=requestAnimationFrame(tick);
+    }
+    function tick(now){
+      parts=parts.filter(function(p){
+        var u=(now-p.t0)/p.dur;
+        if(u<0){return true;}
+        if(u>=1){pg.removeChild(p.el);return false;}
+        var n=p.seq.length, si=Math.min(n-1,Math.floor(u*n)), local=u*n-si;
+        var key=p.seq[si], rev=key.charAt(0)==='-'; if(rev)key=key.slice(1);
+        var g=gp[key], at=(rev?1-local:local)*g.len, pt=g.el.getPointAtLength(at);
+        p.el.setAttribute('cx',pt.x);p.el.setAttribute('cy',pt.y);p.el.setAttribute('opacity','1');
+        return true;
+      });
+      raf=parts.length?requestAnimationFrame(tick):null;
+    }
+    function setLive(){root.classList.add('bfb-live');}
+
+    /* messages */
+    var msgEl=$('[data-msg]');
+    function say(t){msgEl.textContent=t;}
+
+    /* one month */
+    function step(){
+      S.month++;modeMonth++;
+      var fl=[], notes=[], rr=pct('onTime');
+      S.price*=1+monthlyReturn(modeMonth);
+
+      var add=num('monthlyAdd');
+      if(add>0){S.btc+=add/S.price;S.holdBtc+=add/S.price;fl.push([['capIn'],ORANGE,2]);}
+
+      var pot=0, oi=num('outsideIncome');
+      if(oi>0){pot+=oi;S.outside+=oi;S.holdBtc+=oi/S.price;fl.push([['outsideRoute'],ORANGE,2]);}
+
+      var bi=S.debt*pct('borrowApr')/12; pot-=bi;
+
+      var li=0, lp=0, fr=pct('famRate');
+      S.loans.forEach(function(l){
+        var due=Math.min(l.rem,l.step)*rr, it=l.rem*fr/12*rr;
+        l.rem-=due;lp+=due;li+=it;
+      });
+      S.loans=S.loans.filter(function(l){return l.rem>0.5;});
+      if(lp>0){S.reserve+=lp;fl.push([['-lend'],GREEN,2]);}
+      if(li>0){pot+=li;fl.push([['a2','yieldOut'],GREEN,2]);}
+
+      var ey=S.engines*pct('engineApy')/12;
+      if(ey>0){pot+=ey;fl.push([['yieldOut'],ORANGE,2]);}
+
+      var earned=pot;
+      if(pot<0){S.debt+=-pot;notes.push('Earnings did not cover the borrowing cost, so '+money(-pot)+' was added to the debt.');pot=0;}
+      if(pot>0){
+        var w=[pct('wStack'),pct('wReserve'),pct('wCompound'),pct('wExtract')], sum=w[0]+w[1]+w[2]+w[3];
+        if(sum<=0){w=[0,1,0,0];sum=1;}
+        var a=pot*w[0]/sum,b=pot*w[1]/sum,c=pot*w[2]/sum,d=pot*w[3]/sum;
+        S.btc+=a/S.price;S.reserve+=b;S.engines+=c;S.extracted+=d;
+        if(a>0)fl.push([['routeToReserve','spokeIn'],ORANGE,2]);
+        if(b>0)fl.push([['routeToReserve'],ORANGE,1]);
+        if(c>0)fl.push([['compound'],ORANGE,2]);
+        if(d>0)fl.push([['routeToReserve','extractLine'],GREEN,1]);
+      }
+
+      if(S.debt>0&&F('autoDefend').checked&&ltv()>0.40&&S.reserve>0){
+        var need=S.debt-0.35*vaultVal(), pay=Math.min(need,S.reserve);
+        if(pay>0){S.reserve-=pay;S.debt-=pay;fl.push([['-stablesIn'],GREEN,3]);notes.push('LTV passed 40%, so '+money(pay)+' of reserve cash paid the debt down.');}
+      }
+      if(S.debt>0&&ltv()>=0.75){
+        var sellUsd=S.debt*1.1, sellBtc=Math.min(S.btc,sellUsd/S.price);
+        S.btc-=sellBtc;S.debt=0;
+        notes.push('LIQUIDATED. LTV hit 75%, so the platform sold '+sellBtc.toFixed(4)+' BTC to clear the loan. This is what the rule is there to prevent.');
+      }
+
+      pushHist();
+      fl.slice(0,7).forEach(function(f){fly(f[0],f[1],f[2]);});
+      say(notes.length?notes.join(' '):'Month '+S.month+': the bank netted '+money(earned)+' after borrowing costs and routed it.');
+    }
+
+    /* actions */
+    function act(name){
+      setLive();
+      var px=S.price;
+      if(name==='addVault'){
+        var x=num('aVault');if(!x){say('Enter an amount above $0.');return;}
+        S.btc+=x/px;S.holdBtc+=x/px;
+        fly(['capIn'],ORANGE,Math.min(6,2+Math.floor(Math.log10(x))));
+        say('Added '+money(x)+' to the Vault, which bought '+(x/px).toFixed(4)+' BTC.');
+      }
+      if(name==='borrow'){
+        var x2=num('aBorrow'), room=Math.max(0,pct('maxLtv')*vaultVal()-S.debt), amt=Math.min(x2,room);
+        if(!x2){say('Enter an amount above $0.');return;}
+        if(amt<=0){say('That is past your borrowing limit of '+Math.round(pct('maxLtv')*100)+'% LTV. Add to the Vault or pay down the debt first.');return;}
+        S.debt+=amt;S.reserve+=amt;
+        fly(['spokeOut','stablesIn'],ORANGE,Math.min(6,2+Math.floor(Math.log10(amt))));
+        say('Borrowed '+money(amt)+(amt<x2?' (capped at your limit)':'')+' against the Vault. The stablecoins are in the family reserve. LTV is now '+Math.round(ltv()*100)+'%.');
+      }
+      if(name==='lend'){
+        var x3=num('aLend'), a3=Math.min(x3,S.reserve);
+        if(!x3){say('Enter an amount above $0.');return;}
+        if(a3<=0){say('The reserve is empty. Borrow, or bring in outside capital first.');return;}
+        var term=Math.max(1,num('termMonths')||36);
+        S.reserve-=a3;S.loans.push({rem:a3,step:a3/term});
+        fly(['lend'],ORANGE,Math.min(6,2+Math.floor(Math.log10(a3))));
+        say('Lent '+money(a3)+' to family'+(a3<x3?' (all the reserve had)':'')+'. It is repaid over '+term+' months at '+num('famRate')+'% a year.');
+      }
+      if(name==='toEngines'){
+        var x4=num('aEngines'), a4=Math.min(x4,S.reserve);
+        if(!x4){say('Enter an amount above $0.');return;}
+        if(a4<=0){say('The reserve is empty. Borrow, or bring in outside capital first.');return;}
+        S.reserve-=a4;S.engines+=a4;
+        fly(['toEngines'],ORANGE,Math.min(6,2+Math.floor(Math.log10(a4))));
+        say('Sent '+money(a4)+' from the reserve into the yield engines.');
+      }
+      if(name==='repay'){
+        var x5=num('aRepay'), a5=Math.min(x5,S.reserve,S.debt);
+        if(!x5){say('Enter an amount above $0.');return;}
+        if(a5<=0){say(S.debt<=0?'There is no debt to pay down.':'The reserve is empty.');return;}
+        S.reserve-=a5;S.debt-=a5;
+        fly(['-stablesIn'],GREEN,Math.min(6,2+Math.floor(Math.log10(a5))));
+        say('Paid '+money(a5)+' of debt from the reserve. LTV is now '+Math.round(ltv()*100)+'%.');
+      }
+      if(name==='bringIn'){
+        var x6=num('aOutside'), to=F('aOutsideTo').value;
+        if(!x6){say('Enter an amount above $0.');return;}
+        S.outside+=x6;S.holdBtc+=x6/px;
+        var n6=Math.min(6,2+Math.floor(Math.log10(x6)));
+        if(to==='vault'){S.btc+=x6/px;fly(['capIn'],ORANGE,n6);say('Brought in '+money(x6)+' of outside yield farming capital and bought '+(x6/px).toFixed(4)+' BTC for the Vault.');}
+        if(to==='engines'){S.engines+=x6;fly(['outsideEngines'],ORANGE,n6);say('Brought in '+money(x6)+' of outside yield farming capital. It is working in the yield engines.');}
+        if(to==='reserve'){S.reserve+=x6;fly(['outsideReserve'],ORANGE,n6);say('Brought in '+money(x6)+' of outside yield farming capital. It is in the family reserve as dry powder.');}
+      }
+      pushHist();
+      render();
+    }
+
+    /* render */
+    function render(){
+      var l=ltv(), v=vaultVal(), T=function(k,t){var el=$('[data-t="'+k+'"]');if(el)el.textContent=t;}, O=function(k,t){var el=$('[data-o="'+k+'"]');if(el)el.textContent=t;};
+      T('vaultBtc',S.btc.toFixed(4)+' BTC');T('vaultUsd',money(v));
+      T('debt','Debt '+money(S.debt));T('loans','Out '+money(loansOut()));
+      T('engines','Working '+money(S.engines));T('reserve',money(S.reserve));T('extracted',money(S.extracted)+' taken');
+      var tot=net(), hold=holdVal();
+      O('price',money(S.price));O('vault',money(v)+'  ('+S.btc.toFixed(4)+' BTC)');O('debt',money(S.debt));
+      O('reserve',money(S.reserve));O('loans',money(loansOut()));O('engines',money(S.engines));O('extracted',money(S.extracted));
+      O('outside',money(S.outside));O('total',money(tot));O('hold',money(hold));
+      O('diff',(tot-hold>=0?'+':'')+money(tot-hold));
+      var yrs=Math.floor(S.month/12), mo=S.month%12;
+      $('[data-o="clock"]').innerHTML='Month '+S.month+' <span>Year '+yrs+', month '+mo+'. Bitcoin '+money(S.price)+'</span>';
+      var lp=Math.round(l*100), state=l<=0.30?'Healthy':(l<=0.5?'Watch it':'Danger');
+      $('[data-o="meter"]').textContent='LTV '+lp+'%: '+state+(S.debt<=0?' (no debt)':'');
+      $('[data-needle]').style.left=Math.min(100,l/0.8*100)+'%';
+      var room=Math.max(0,pct('maxLtv')*v-S.debt);
+      O('maxBorrow','You can borrow up to '+money(room)+' more at your limit. The stablecoins land in the family reserve.');
+      chart();
+    }
+
+    function chart(){
+      var H=S.hist, w=640, h=250, L=60, R=14, T=40, B=30, pw=w-L-R, ph=h-T-B;
+      var maxM=Math.max(12,S.month), mx=0, mn=0;
+      H.forEach(function(p){mx=Math.max(mx,p.net,p.hold);mn=Math.min(mn,p.net,p.hold);});
+      mx=mx*1.05; if(mx<=mn)mx=mn+1;
+      function X(m){return L+m/maxM*pw;}
+      function Y(v){return T+ph-(v-mn)/(mx-mn)*ph;}
+      var a=H.map(function(p){return X(p.m).toFixed(1)+','+Y(p.net).toFixed(1);}).join(' ');
+      var b=H.map(function(p){return X(p.m).toFixed(1)+','+Y(p.hold).toFixed(1);}).join(' ');
+      var g='';
+      for(var i=0;i<=3;i++){var v=mn+(mx-mn)*i/3, y=Y(v);
+        g+='<line x1="'+L+'" x2="'+(w-R)+'" y1="'+y.toFixed(1)+'" y2="'+y.toFixed(1)+'" stroke="#b3c6ba" stroke-width="1"/>';
+        g+='<text x="'+(L-8)+'" y="'+(y+4).toFixed(1)+'" text-anchor="end" font-size="12" fill="#2f6b52">'+short(v)+'</text>';}
+      var xs=[0,Math.round(maxM/2),maxM];
+      xs.forEach(function(m){g+='<text x="'+X(m).toFixed(1)+'" y="'+(h-8)+'" text-anchor="middle" font-size="12" fill="#2f6b52">Month '+m+'</text>';});
+      var lg='<line x1="'+L+'" x2="'+(L+26)+'" y1="12" y2="12" stroke="#0f3d2e" stroke-width="3.5"/><text x="'+(L+34)+'" y="16" font-size="13" font-weight="600" fill="#0f3d2e">Family bank total value</text>'
+           +'<line x1="'+L+'" x2="'+(L+26)+'" y1="28" y2="28" stroke="#f08a00" stroke-width="3.5" stroke-dasharray="6 4"/><text x="'+(L+34)+'" y="32" font-size="13" font-weight="600" fill="#0f3d2e">Just holding Bitcoin</text>';
+      $('[data-chart]').innerHTML=g+lg
+        +'<polyline fill="none" stroke="#f08a00" stroke-width="3" stroke-dasharray="7 5" points="'+b+'"/>'
+        +'<polyline fill="none" stroke="#0f3d2e" stroke-width="3.5" points="'+a+'"/>';
+    }
+
+    /* controls */
+    var playBtn=$('[data-ctl="play"]');
+    function schedule(){
+      timer=setTimeout(function(){
+        if(!playing)return;
+        if(S.month>=240){pause();say('Reached month 240. Reset to run again.');return;}
+        step();render();schedule();
+      },interval());
+    }
+    function play(){
+      if(playing)return;
+      playing=true;setLive();playBtn.textContent='Pause';playBtn.setAttribute('aria-pressed','true');
+      if(S.month>=240){pause();return;}
+      step();render();schedule();
+    }
+    function pause(){
+      playing=false;clearTimeout(timer);playBtn.textContent='Play';playBtn.setAttribute('aria-pressed','false');
+    }
+    function clearParts(){parts.forEach(function(p){if(p.el.parentNode)p.el.parentNode.removeChild(p.el);});parts=[];}
+    playBtn.addEventListener('click',function(){playing?pause():play();});
+    $('[data-ctl="step"]').addEventListener('click',function(){pause();setLive();if(S.month<240){step();render();}});
+    $('[data-ctl="reset"]').addEventListener('click',function(){pause();clearParts();resetState(true);render();say('Reset to the example: $50,000 Vault with a 30% borrow, split between a family loan, the yield engines and the reserve.');});
+    $('[data-ctl="empty"]').addEventListener('click',function(){pause();clearParts();resetState(false);render();say('Started with just the Vault. Borrow, lend and bring in outside capital to build the bank.');});
+    $$('[data-act]').forEach(function(b){b.addEventListener('click',function(){act(b.getAttribute('data-act'));});});
+
+    /* route sliders: show the normalized share */
+    function routeLabels(){
+      var k=['wStack','wReserve','wCompound','wExtract'], v=k.map(function(n){return parseFloat(F(n).value)||0;}), s=v[0]+v[1]+v[2]+v[3];
+      k.forEach(function(n,i){var o=$('[data-wo="'+n+'"]');if(o)o.textContent=(s>0?Math.round(v[i]/s*100):(i===1?100:0))+'%';});
+    }
+    ['wStack','wReserve','wCompound','wExtract'].forEach(function(n){F(n).addEventListener('input',routeLabels);});
+    ['maxLtv'].forEach(function(n){F(n).addEventListener('input',render);});
+
+    /* scenario picker */
+    var say2=$('[data-say]'), btns=$$('.bfb-when button[data-m]');
+    function setMode(m){
+      var cfg=modes[m]; mode=m; modeMonth=0;
+      all.forEach(function(id){var el=$('[data-p="'+id+'"]');if(el)el.classList.toggle('bfb-dim',cfg.on.indexOf(id)===-1);});
+      say2.innerHTML=cfg.t+'<i>'+cfg.p+' This is a made-up path, not a forecast.</i>';
+      btns.forEach(function(b){b.setAttribute('aria-selected',b.getAttribute('data-m')===m?'true':'false');});
+    }
+    btns.forEach(function(b){b.addEventListener('click',function(){setMode(b.getAttribute('data-m'));});});
+
+    resetState(true);routeLabels();setMode('full');render();
+  }
+  function go(){var l=document.querySelectorAll('.bfb-root');for(var i=0;i<l.length;i++)init(l[i]);}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
+})();
+</script></div>
+  <div class="fb-after reveal">
+    <h3>Want to build a real one?</h3>
+    <p>This is a simplified model for learning. The price paths are made up, and real borrowing against Bitcoin carries liquidation risk. If you want help designing a family bank for your own situation, book a session and we will walk through it together.</p>
+    <div class="btn-row"><a class="btn btn-gold" href="consultations.html">Book a session</a><a class="btn btn-ghost" href="rebuilding-black-wall-street.html">The story behind it</a><a class="btn btn-ghost" href="tools.html">More tools</a></div>
+  </div>
+</div></section>
 </main>
 <footer class="site-footer">
   <div class="wrap foot-grid">
@@ -700,26 +1381,6 @@ sup.sn{font:800 .66rem var(--body);margin-left:2px}sup.sn a{color:var(--cyan);te
   <div class="wrap legal small muted"><p>Block Wall Street provides education only. Nothing here is financial, legal, or tax advice, and digital assets can lose value. No guaranteed returns. Do your own research.</p><p>&copy; <span data-year>2026</span> Block Wall Street</p></div>
 </footer>
 <a class="chat-bubble" href="about.html#contact">Message us</a>
-<script src="offers-data.js"></script>
-<script>
-(function(){
-  var box=document.getElementById('cal-box');
-  document.addEventListener('click',function(e){
-    var b=e.target.closest('[data-cal]'); if(!b||!box) return;
-    var u=b.getAttribute('data-cal'); if(!/^https:\/\/calendly\.com\//.test(u)) return;
-    box.innerHTML='<iframe title="Scheduling calendar" src="'+u+'?embed_domain='+encodeURIComponent(location.hostname||'blockwallstreet.biz')+'&embed_type=Inline&hide_gdpr_banner=1" loading="lazy"></iframe>';
-    box.scrollIntoView({behavior:'smooth',block:'start'});
-  });
-  var O=window.BWS_OFFERS, sel=document.querySelector('[data-purchase-select]');
-  if(O&&sel){
-    var seen={};
-    var list=[].concat(O.consultations||[],O.videos||[]).filter(function(x){return x.show!==false&&x.title});
-    if(list.length){
-      sel.innerHTML='<option value="">Choose one</option>'+list.map(function(x){var t=String(x.title).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]});return '<option>'+t+'</option>'}).join('')+'<option>Other</option>';
-    }
-  }
-})();
-</script>
 <script>
 (function(){
   var d=document, groups=[].slice.call(d.querySelectorAll('.nav-group'));

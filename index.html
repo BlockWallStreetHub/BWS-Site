@@ -632,6 +632,20 @@ sup.sn{font:800 .66rem var(--body);margin-left:2px}sup.sn a{color:var(--cyan);te
 .bc-facts li{padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.03);display:flex;flex-direction:column;gap:4px}
 .bc-facts strong{color:var(--cyan);font-size:1.05rem}.bc-facts span{font-size:.82rem;opacity:.8}
 @media (max-width:560px){.bc-facts{grid-template-columns:1fr}}
+
+.soon{display:grid;grid-template-columns:240px 1fr;gap:32px;align-items:center;padding:28px;border:1px solid rgba(212,175,55,.4);border-radius:22px;background:linear-gradient(135deg,rgba(212,175,55,.08),rgba(255,255,255,.02))}
+.soon-cover{width:100%;height:auto;border-radius:6px;box-shadow:0 24px 50px rgba(0,0,0,.55),0 0 0 1px rgba(212,175,55,.35);transform:rotate(-1.5deg)}
+.soon h2{margin:6px 0 12px;font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.1}
+.soon .lead,.soon p{max-width:none}
+@media (max-width:720px){.soon{grid-template-columns:1fr;padding:20px}.soon-cover{max-width:220px;margin:0 auto}}
+
+.fb-intro{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 26px}
+.fb-intro div{padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.03)}
+.fb-intro b{display:block;color:var(--cyan);margin-bottom:4px}
+.fb-panel{border-radius:18px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.fb-after{margin-top:28px;padding:26px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.03)}
+.fb-after h3{margin:0 0 8px}.fb-after p{max-width:none}
+@media (max-width:720px){.fb-intro{grid-template-columns:1fr}}
 </style>
 <script>document.documentElement.className+=' js'</script>
 </head>
@@ -641,7 +655,7 @@ sup.sn{font:800 .66rem var(--body);margin-left:2px}sup.sn a{color:var(--cyan);te
   <div class="wrap bar">
     <a class="brand" href="index.html" aria-label="Block Wall Street Academy home"><span class="mark">BWS</span><span class="brand-name">Block Wall Street<small>Academy</small></span></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-    <nav id="primary-nav" class="primary-nav" aria-label="Primary"><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Learn<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="e-books.html">E-Books</a><a href="bitcoin-in-10-minutes.html">Bitcoin in 10 Minutes</a><a href="bitcoin-whitepaper.html">Bitcoin White Paper, Plain English</a><a href="rebuilding-black-wall-street.html">Rebuilding Black Wall Street</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Tools<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="tools.html">All tools</a><a href="bitcoin-atms.html">Find a Bitcoin ATM</a><a href="black-dollar-bitcoin.html">Black Dollar &amp; Bitcoin</a><a href="sats-converter.html">Sats converter</a><a href="dca-calculator.html">DCA calculator</a><a href="bitcoin-dashboard.html">Bitcoin dashboard</a><a href="priced-in-bitcoin.html">Priced in Bitcoin</a><a href="lp-simulator.html">Liquidity pool simulator</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">News<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="news.html">Daily crypto news</a><a href="newsletter.html">The Morning Brew newsletter</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Work with us<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="consultations.html">Consultations</a><a href="schedule.html">Schedule a session</a><a href="events.html">Events</a><a href="midas-star-funding.html">Midas Star Funding</a></div></div><a class="nav-direct" href="about.html">About</a><a class="nav-direct" href="donate.html">☕ Donate</a><a class="btn btn-gold btn-small nav-cta" href="schedule.html">Book a session</a></nav>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary"><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Learn<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="courses.html">Courses</a><a href="videos.html">Videos</a><a href="e-books.html">E-Books</a><a href="bitcoin-in-10-minutes.html">Bitcoin in 10 Minutes</a><a href="bitcoin-whitepaper.html">Bitcoin White Paper, Plain English</a><a href="rebuilding-black-wall-street.html">Rebuilding Black Wall Street</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Tools<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="tools.html">All tools</a><a href="bitcoin-atms.html">Find a Bitcoin ATM</a><a href="bitcoin-family-bank.html">Bitcoin Family Bank</a><a href="black-dollar-bitcoin.html">Black Dollar &amp; Bitcoin</a><a href="sats-converter.html">Sats converter</a><a href="dca-calculator.html">DCA calculator</a><a href="bitcoin-dashboard.html">Bitcoin dashboard</a><a href="priced-in-bitcoin.html">Priced in Bitcoin</a><a href="lp-simulator.html">Liquidity pool simulator</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">News<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="news.html">Daily crypto news</a><a href="newsletter.html">The Morning Brew newsletter</a></div></div><div class="nav-group"><button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">Work with us<span class="caret" aria-hidden="true"></span></button><div class="nav-menu"><a href="consultations.html">Consultations</a><a href="schedule.html">Schedule a session</a><a href="events.html">Events</a><a href="midas-star-funding.html">Midas Star Funding</a></div></div><a class="nav-direct" href="about.html">About</a><a class="nav-direct" href="donate.html">☕ Donate</a><a class="btn btn-gold btn-small nav-cta" href="schedule.html">Book a session</a></nav>
   </div>
 </header>
 <main id="main">
@@ -885,6 +899,11 @@ sup.sn{font:800 .66rem var(--body);margin-left:2px}sup.sn a{color:var(--cyan);te
     <div class="btn-row center"><a class="btn btn-gold" href="courses.html">Explore all courses &#8599;</a><a class="btn btn-ghost" href="consultations.html">Book a consultation</a></div>
   </div></div>
 </section>
+<section class="section tight"><div class="wrap"><div class="fb-after reveal">
+  <p class="eyebrow">Try it</p><h3>Be the bank.</h3>
+  <p>Watch a Bitcoin family bank run month by month: a Vault you never sell, loans to family, and yield engines that fund your life. Press Play and see what happens when price rips, chops, or pulls back.</p>
+  <div class="btn-row"><a class="btn btn-gold" href="bitcoin-family-bank.html">Open the family bank demo</a></div>
+</div></div></section>
 <section class="section tight"><div class="wrap"><div class="nl-band reveal">
   <img class="nl-band-logo" src="morning-brew-logo.png" width="150" height="150" alt="Morning Brew Newsletter logo" loading="lazy">
   <div class="nl-band-body"><h3>Get The Morning Brew</h3><p class="muted">Crypto news in plain English, plus our free guide Bitcoin in 10 Minutes when you join.</p>
