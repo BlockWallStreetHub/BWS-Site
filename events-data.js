@@ -20,7 +20,7 @@ window.BWS_EVENTS = [
     "format": "In person (Chicago) or online",
     "desc": "A hands-on 4-week boot camp for beginners: wallets and self-custody, buying Bitcoin and other blue chips, on-chain credit and income, and a plan you can follow. No experience needed.",
     "price": "",
-    "link": "https://blockwallstreethub.github.io/BlockWallStreetBootCamp/",
+    "link": "https://blockwallstreethub.github.io/BootCampRSVP/",
     "cta": "RSVP",
     "featured": true
   }
