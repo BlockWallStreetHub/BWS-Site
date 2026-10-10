@@ -13,15 +13,15 @@ window.BWS_EVENTS = [
     "featured": false
   },
   {
-    "title": "On-Chain Finance & Wealth Structuring",
+    "title": "Beginner Boot Camp",
     "date": "",
-    "recurring": "4 weeks",
-    "time": "2 sessions a week, 2 hours each",
-    "format": "Cohort program",
-    "desc": "Our cohort program combining on-chain finance with UPMA trust structuring.",
+    "recurring": "Starts November",
+    "time": "4 weeks, 2 sessions a week, 2 hours each",
+    "format": "In person (Chicago) or online",
+    "desc": "A hands-on 4-week boot camp for beginners: wallets and self-custody, buying Bitcoin and other blue chips, on-chain credit and income, and a plan you can follow. No experience needed.",
     "price": "",
-    "link": "index.html#bootcamp",
-    "cta": "RSVP for details",
-    "featured": false
+    "link": "https://blockwallstreethub.github.io/BlockWallStreetBootCamp/",
+    "cta": "RSVP",
+    "featured": true
   }
 ];
