@@ -646,6 +646,15 @@ sup.sn{font:800 .66rem var(--body);margin-left:2px}sup.sn a{color:var(--cyan);te
 .fb-after{margin-top:28px;padding:26px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.03)}
 .fb-after h3{margin:0 0 8px}.fb-after p{max-width:none}
 @media (max-width:720px){.fb-intro{grid-template-columns:1fr}}
+
+.ev-logo{display:block;width:100%;max-width:200px;height:auto;border-radius:18px;margin:0 0 14px;box-shadow:0 14px 40px rgba(0,0,0,.5)}
+.rsvp-panel{grid-column:1/-1;margin-top:6px;padding:26px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(160deg,rgba(14,26,56,.7),rgba(5,9,20,.95))}
+.rsvp-panel h4{font-size:1.5rem;margin:0 0 6px}
+.rsvp-panel>p{margin:0 0 16px}
+.rsvp-form{max-width:520px}
+.rsvp-msg{min-height:1.3em;margin:0;color:#FF9A8B;font-weight:600}
+.rsvp-done{padding:18px 20px;border:1px solid var(--cyan);border-radius:16px;background:rgba(53,240,255,.07)}
+.rsvp-done p{margin:0 0 14px;color:#E6EAF6}
 </style>
 <script>document.documentElement.className+=' js'</script>
 </head>
@@ -678,6 +687,8 @@ sup.sn{font:800 .66rem var(--body);margin-left:2px}sup.sn a{color:var(--cyan);te
         <label class="field">Price label (optional)<input name="price" autocomplete="off" placeholder="Free"></label>
         <label class="field">Sign-up link<input name="link" autocomplete="off" placeholder="https://..."></label>
         <label class="field">Button text<input name="cta" autocomplete="off" placeholder="RSVP"></label>
+        <label class="field">Class logo image (optional)<input name="logo" autocomplete="off" placeholder="ai-investing-class-logo.png"></label>
+        <label class="check"><input type="checkbox" name="rsvp"> Show an RSVP form on the Events page</label>
         <label class="check"><input type="checkbox" name="featured"> Feature on the home page</label>
         <div class="btn-row tight"><button type="button" class="btn btn-gold" data-add>Add class</button><button type="button" class="btn btn-ghost" data-cancel hidden>Cancel edit</button></div>
         <p class="msg" data-msg role="status"></p>
@@ -1033,7 +1044,26 @@ function renderList(){
   if(!L.length){ul.innerHTML='<li class="event empty"><div class="what"><h3>New classes are announced soon</h3><p>Sign up below and we will email you when the next one opens.</p></div></li>';return}
   ul.innerHTML=L.map(function(e){
     var w=whenParts(e),meta=[e.format,e.price].filter(Boolean).join(', ');
-    return '<li class="event"><div class="when"><strong>'+esc(w[0])+'</strong><span>'+esc(w[1])+'</span></div><div class="what"><h3>'+esc(e.title)+'</h3><p>'+esc(e.desc)+'</p>'+(meta?'<p class="small muted">'+esc(meta)+'</p>':'')+'</div><div class="act"><a class="btn btn-small '+(e.featured?'btn-gold':'btn-ghost')+'" href="'+esc(safeUrl(e.link))+'"'+(ext(e.link)?' target="_blank" rel="noopener"':'')+'>'+esc(e.cta||'RSVP')+'</a></div></li>';
+    var logo=e.logo?'<img class="ev-logo" src="'+esc(e.logo)+'" alt="'+esc(e.title)+' logo" loading="lazy">':'';
+    var when=w[0]+(w[1]?', '+w[1]:'');
+    var panel='';
+    if(e.rsvp){
+      panel='<div class="rsvp-panel"><h4>Reserve your seat</h4><p class="small muted">RSVP below, then complete your payment to confirm your spot.</p>'
+        +'<form class="form rsvp-form" data-rsvp-form><div class="rsvp-fields form">'
+        +'<input type="hidden" name="access_key" value="cbde23f6-f617-4b16-953f-7b0aab0e9f58">'
+        +'<input type="hidden" name="subject" value="Class RSVP: '+esc(e.title)+'">'
+        +'<input type="hidden" name="class" value="'+esc(e.title)+'">'
+        +'<input type="hidden" name="class_date" value="'+esc(when)+'">'
+        +'<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">'
+        +'<label>Name<input type="text" name="name" autocomplete="name" required></label>'
+        +'<label>Email<input type="email" name="email" autocomplete="email" required></label>'
+        +'<label>Phone (optional)<input type="tel" name="phone" autocomplete="tel"></label>'
+        +'<button class="btn btn-gold" type="submit">RSVP</button>'
+        +'<p class="rsvp-msg" role="status" aria-live="polite"></p></div>'
+        +'<div class="rsvp-done" hidden><p><strong>You are on the list.</strong> One last step: complete your payment to confirm your seat.</p><a class="btn btn-gold" href="'+esc(safeUrl(e.link))+'" target="_blank" rel="noopener">Complete payment</a></div>'
+        +'</form></div>';
+    }
+    return '<li class="event'+(e.rsvp?' has-rsvp':'')+'"><div class="when">'+logo+'<strong>'+esc(w[0])+'</strong><span>'+esc(w[1])+'</span></div><div class="what"><h3>'+esc(e.title)+'</h3><p>'+esc(e.desc)+'</p>'+(meta?'<p class="small muted">'+esc(meta)+'</p>':'')+'</div><div class="act"><a class="btn btn-small '+(e.featured?'btn-gold':'btn-ghost')+'" href="'+esc(safeUrl(e.link))+'"'+(ext(e.link)?' target="_blank" rel="noopener"':'')+'>'+esc(e.cta||'RSVP')+'</a></div>'+panel+'</li>';
   }).join('');
 }
 function renderBoard(){
@@ -1050,10 +1080,10 @@ function renderBoard(){
 }
 function initAdmin(root){
   var list=ALL.slice(),editing=-1;
-  var f={};['title','date','recurring','time','format','desc','price','link','cta'].forEach(function(k){f[k]=$('[name='+k+']',root)});
-  var feat=$('[name=featured]',root),msg=$('[data-msg]',root),ul=$('[data-list]',root),code=$('[data-code]',root),addB=$('[data-add]',root),canB=$('[data-cancel]',root);
-  function read(){var o={};Object.keys(f).forEach(function(k){o[k]=f[k].value.trim()});o.featured=feat.checked;return o}
-  function write(o){Object.keys(f).forEach(function(k){f[k].value=o?o[k]||'':''});feat.checked=!!(o&&o.featured)}
+  var f={};['title','date','recurring','time','format','desc','price','link','cta','logo'].forEach(function(k){f[k]=$('[name='+k+']',root)});
+  var feat=$('[name=featured]',root),rsvp=$('[name=rsvp]',root),msg=$('[data-msg]',root),ul=$('[data-list]',root),code=$('[data-code]',root),addB=$('[data-add]',root),canB=$('[data-cancel]',root);
+  function read(){var o={};Object.keys(f).forEach(function(k){o[k]=f[k].value.trim()});o.featured=feat.checked;o.rsvp=rsvp.checked;return o}
+  function write(o){Object.keys(f).forEach(function(k){f[k].value=o?o[k]||'':''});feat.checked=!!(o&&o.featured);rsvp.checked=!!(o&&o.rsvp)}
   function render(){
     ul.innerHTML=list.length?list.map(function(e,i){var w=whenParts(e);return '<li><div><strong>'+esc(e.title)+'</strong><span>'+esc(w[0]+(w[1]?', '+w[1]:''))+'</span></div><div class="acts"><button class="chip-btn" data-edit="'+i+'">Edit</button><button class="chip-btn" data-del="'+i+'">Remove</button></div></li>'}).join(''):'<li><span>No classes yet. Add one on the left.</span></li>';
     code.value='// Edit this list on the Manage classes page, then paste the generated code here.\nwindow.BWS_EVENTS = '+JSON.stringify(list,null,2)+';\n';
@@ -1081,6 +1111,20 @@ function initAdmin(root){
   });
   render();
 }
+document.addEventListener('submit',function(ev){
+  var f=ev.target;if(!f||!f.matches||!f.matches('[data-rsvp-form]'))return;
+  ev.preventDefault();
+  var b=f.querySelector('button[type=submit]'),m=f.querySelector('.rsvp-msg');
+  b.disabled=true;b.textContent='Sending...';m.textContent='';
+  var data={};new FormData(f).forEach(function(v,k){data[k]=v});
+  fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
+    .then(function(r){return r.json()})
+    .then(function(j){
+      if(j&&j.success){f.querySelector('.rsvp-fields').hidden=true;f.querySelector('.rsvp-done').hidden=false}
+      else throw new Error('fail');
+    })
+    .catch(function(){m.textContent='Something went wrong. Please try again, or message us.';b.disabled=false;b.textContent='RSVP'});
+});
 function boot(){renderList();renderBoard();$$('[data-admin]').forEach(initAdmin)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
 })();
